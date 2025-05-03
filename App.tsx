@@ -19,10 +19,6 @@ function App(): React.JSX.Element {
           <Stack.Screen
             name="surahPage"
             component={surahPage}
-            // options={({route}) => ({
-            //   headerShown: true,
-            //   headerTitle: route?.params?.item?.title,
-            // })}
             options={{headerShown: false}}
           />
         </Stack.Navigator>
