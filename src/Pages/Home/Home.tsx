@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     Animated.timing(underlineAnim, {
       toValue: activeTab === 'surahs' ? 0 : tabWidth,
-      duration: 200,
+      duration: 300,
       useNativeDriver: false,
     }).start();
   }, [activeTab]);
@@ -64,9 +64,9 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   header: {
-    paddingTop: 30,
+    paddingTop: 15,
     paddingHorizontal: 16,
-    paddingBottom: 10,
+    paddingBottom: 15,
     backgroundColor: '#2c6e49',
   },
   heading: {
