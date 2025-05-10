@@ -5,6 +5,7 @@ export const surahs = [
     count: 7,
     title: 'Al-Fatiha',
     titleAr: 'الفاتحة',
+    translatedName: 'کھولنے والی',
     index: '001',
     pages: '1',
     juz: [
@@ -23,6 +24,7 @@ export const surahs = [
     count: 286,
     title: 'Al-Baqara',
     titleAr: 'البقرة',
+    translatedName: 'گائے',
     index: '002',
     pages: '2',
     juz: [
@@ -55,6 +57,8 @@ export const surahs = [
     count: 200,
     title: 'Al-Imran',
     titleAr: 'آل عمران',
+    translatedName: 'عمران کا خاندان',
+
     index: '003',
     pages: '45',
     juz: [
@@ -80,6 +84,8 @@ export const surahs = [
     count: 176,
     title: "An-Nisaa'",
     titleAr: 'النساء',
+    translatedName: 'عورت',
+
     index: '004',
     pages: '69',
     juz: [
