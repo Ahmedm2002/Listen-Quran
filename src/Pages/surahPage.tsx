@@ -3,10 +3,11 @@ import React, {useEffect, useState} from 'react';
 import {
   View,
   Text,
-  ScrollView,
   ActivityIndicator,
   StyleSheet,
+  FlatList,
 } from 'react-native';
+import SurahDetails from '../Components/SurahDetails';
 
 const SurahPage = ({route}: any) => {
   const surah = route?.params?.item;
@@ -20,7 +21,9 @@ const SurahPage = ({route}: any) => {
       const response = await axios.get(
         `http://api.alquran.cloud/v1/surah/${surahNumber}/ar.alafasy`,
       );
+
       setAyahs(response.data.data.ayahs);
+      console.log('Response of Api: ', response.data);
     } catch (err) {
       console.log(err);
     } finally {
@@ -43,39 +46,34 @@ const SurahPage = ({route}: any) => {
   const isBismillahRequired = !['At-Tawbah', 'التوبة'].includes(surah.title);
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>{surah.title}</Text>
-      <Text style={styles.titleAr}>{surah.titleAr}</Text>
-
-      <View style={styles.metaBox}>
-        <Text style={styles.meta}>📍 {surah.place}</Text>
-        <Text style={styles.meta}>🔢 Ayahs: {surah.count}</Text>
-        <Text style={styles.meta}>📝 Meaning: {surah.translatedName}</Text>
-      </View>
-
+    <View style={styles.container}>
       {loading ? (
         <ActivityIndicator size="large" color="#2e7d32" />
       ) : (
-        <View style={styles.ayahContainer}>
-          {isBismillahRequired && surahNumber !== 1 && (
-            <Text style={styles.bismillah}>﷽</Text>
-          )}
-          {ayahs.map((ayah, index) => (
-            <View key={index} style={styles.ayahBox}>
-              <Text style={styles.ayahText}>{ayah.text}</Text>
-              <Text style={styles.ayahNumber}>﴿{ayah.numberInSurah}﴾</Text>
-            </View>
-          ))}
-        </View>
+        <>
+          <SurahDetails surah={surah} />
+
+          <FlatList
+            data={ayahs}
+            keyExtractor={item => item.number.toString()}
+            renderItem={({item}) => (
+              <View style={styles.ayahBox}>
+                <Text style={styles.ayahText}>{item.text}</Text>
+                <Text style={styles.ayahNumber}>﴿{item.numberInSurah}﴾</Text>
+              </View>
+            )}
+            contentContainerStyle={{paddingBottom: 60}}
+          />
+        </>
       )}
-    </ScrollView>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     padding: 24,
-    flexGrow: 1,
+    flex: 1,
     backgroundColor: '#f9fdf9',
   },
   center: {
@@ -88,43 +86,12 @@ const styles = StyleSheet.create({
     color: 'red',
     fontSize: 16,
   },
-  title: {
-    fontSize: 26,
-    fontWeight: '600',
-    textAlign: 'center',
-    color: '#2e7d32', // deep green
-    marginBottom: 4,
-  },
-  titleAr: {
-    fontSize: 36,
-    textAlign: 'center',
-    marginBottom: 20,
-    fontFamily: 'KFGQPC Uthman Taha Naskh',
-    color: '#1b5e20', // darker green
-  },
-  metaBox: {
-    backgroundColor: '#e8f5e9',
-    padding: 12,
-    borderRadius: 12,
-    marginBottom: 20,
-    borderColor: '#a5d6a7',
-    borderWidth: 1,
-  },
-  meta: {
-    fontSize: 15,
-    color: '#2e7d32',
-    textAlign: 'center',
-    marginBottom: 4,
-  },
   bismillah: {
     fontSize: 34,
     textAlign: 'center',
     marginBottom: 30,
     fontFamily: 'KFGQPC Uthman Taha Naskh',
     color: '#388e3c',
-  },
-  ayahContainer: {
-    paddingBottom: 40,
   },
   ayahBox: {
     marginBottom: 28,
@@ -135,7 +102,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'KFGQPC Uthman Taha Naskh',
     lineHeight: 44,
-    color: '#212121', // dark text for light background
+    color: '#212121',
   },
   ayahNumber: {
     textAlign: 'center',
