@@ -58,7 +58,6 @@ export const surahs = [
     title: 'Al-Imran',
     titleAr: 'آل عمران',
     translatedName: 'عمران کا خاندان',
-
     index: '003',
     pages: '45',
     juz: [
@@ -118,6 +117,8 @@ export const surahs = [
     count: 120,
     title: "Al-Ma'ida",
     titleAr: 'المائدة',
+    translatedName: 'دسترخوان',
+
     index: '005',
     pages: '95',
     juz: [
@@ -143,6 +144,8 @@ export const surahs = [
     count: 165,
     title: "Al-An'am",
     titleAr: 'الأنعام',
+    translatedName: 'مویشی',
+
     index: '006',
     pages: '115',
     juz: [
@@ -168,6 +171,8 @@ export const surahs = [
     count: 206,
     title: 'Al-Ahraf',
     titleAr: 'الأعراف',
+    translatedName: 'اونچی جگہ',
+
     index: '007',
     pages: '136',
     juz: [
@@ -193,6 +198,8 @@ export const surahs = [
     count: 75,
     title: 'Al-Anfal',
     titleAr: 'الأنفال',
+    translatedName: 'مال غنیمت',
+
     index: '008',
     pages: '160',
     juz: [
@@ -218,6 +225,8 @@ export const surahs = [
     count: 129,
     title: 'Al-Tawba',
     titleAr: 'التوبة',
+    translatedName: 'توبہ',
+
     index: '009',
     pages: '169',
     juz: [
@@ -243,6 +252,8 @@ export const surahs = [
     count: 109,
     title: 'Yunus',
     titleAr: 'يونس',
+    translatedName: 'یونس',
+
     index: '010',
     pages: '187',
     juz: [
@@ -261,6 +272,8 @@ export const surahs = [
     count: 123,
     title: 'Hud',
     titleAr: 'هود',
+    translatedName: 'حود',
+
     index: '011',
     pages: '199',
     juz: [
@@ -286,6 +299,8 @@ export const surahs = [
     count: 111,
     title: 'Yusuf',
     titleAr: 'يوسف',
+    translatedName: 'یوسف',
+
     index: '012',
     pages: '212',
     juz: [
@@ -311,6 +326,8 @@ export const surahs = [
     count: 43,
     title: "Ar-Ra'd",
     titleAr: 'الرعد',
+    translatedName: 'گرج',
+
     index: '013',
     pages: '225',
     juz: [
@@ -329,6 +346,8 @@ export const surahs = [
     count: 52,
     title: 'Ibrahim',
     titleAr: 'إبراهيم',
+    translatedName: 'ابراہیم',
+
     index: '014',
     pages: '231',
     juz: [
@@ -347,6 +366,8 @@ export const surahs = [
     count: 99,
     title: 'Al-Hijr',
     titleAr: 'الحجر',
+    translatedName: 'پتھر',
+
     index: '015',
     pages: '237',
     juz: [
@@ -365,6 +386,8 @@ export const surahs = [
     count: 128,
     title: 'An-Nahl',
     titleAr: 'النحل',
+    translatedName: 'شہد کی مکھی',
+
     index: '016',
     pages: '242',
     juz: [
@@ -383,6 +406,8 @@ export const surahs = [
     count: 111,
     title: 'Al-Israa',
     titleAr: 'الإسراء',
+    translatedName: 'رات کا صفر',
+
     index: '017',
     pages: '255',
     juz: [
@@ -401,6 +426,8 @@ export const surahs = [
     count: 110,
     title: 'Al-Kahf',
     titleAr: 'الكهف',
+    translatedName: 'غار',
+
     index: '018',
     pages: '266',
     juz: [
@@ -426,6 +453,8 @@ export const surahs = [
     count: 98,
     title: 'Maryam',
     titleAr: 'مريم',
+    translatedName: 'مریم',
+
     index: '019',
     pages: '277',
     juz: [
@@ -444,6 +473,8 @@ export const surahs = [
     count: 135,
     title: 'Taha',
     titleAr: 'طه',
+    translatedName: 'طٰہٰ',
+
     index: '020',
     pages: '284',
     juz: [
@@ -462,6 +493,8 @@ export const surahs = [
     count: 112,
     title: 'Al-Anbiya',
     titleAr: 'الأنبياء',
+    translatedName: 'پیغمبر',
+
     index: '021',
     pages: '294',
     juz: [
@@ -480,6 +513,8 @@ export const surahs = [
     count: 78,
     title: 'Al-Hajj',
     titleAr: 'الحج',
+    translatedName: 'حج',
+
     index: '022',
     pages: '302',
     juz: [
@@ -498,6 +533,8 @@ export const surahs = [
     count: 118,
     title: 'Al-Muminun',
     titleAr: 'المؤمنون',
+    translatedName: 'مومنین',
+
     index: '023',
     pages: '311',
     juz: [
@@ -516,6 +553,8 @@ export const surahs = [
     count: 64,
     title: 'An-Nur',
     titleAr: 'النور',
+    translatedName: 'نور',
+
     index: '024',
     pages: '319',
     juz: [
@@ -534,6 +573,8 @@ export const surahs = [
     count: 77,
     title: 'Al-Furqan',
     titleAr: 'الفرقان',
+    translatedName: 'صحیح اور غلط میں فرق کرنے والی کتاب',
+
     index: '025',
     pages: '329',
     juz: [
@@ -559,6 +600,8 @@ export const surahs = [
     count: 227,
     title: 'Ash-Shuara',
     titleAr: 'الشعراء',
+    translatedName: 'شعراٗ',
+
     index: '026',
     pages: '335',
     juz: [
@@ -577,6 +620,8 @@ export const surahs = [
     count: 93,
     title: 'An-Naml',
     titleAr: 'النمل',
+    translatedName: 'چیونٹی',
+
     index: '027',
     pages: '345',
     juz: [
@@ -602,6 +647,8 @@ export const surahs = [
     count: 88,
     title: 'Al-Qasas',
     titleAr: 'القصص',
+    translatedName: 'قصے',
+
     index: '028',
     pages: '354',
     juz: [
@@ -620,6 +667,8 @@ export const surahs = [
     count: 69,
     title: 'Al-Ankabut',
     titleAr: 'العنكبوت',
+    translatedName: 'مکڑی',
+
     index: '029',
     pages: '364',
     juz: [
@@ -645,6 +694,8 @@ export const surahs = [
     count: 60,
     title: 'Ar-Rum',
     titleAr: 'الروم',
+    translatedName: 'روم',
+
     index: '030',
     pages: '371',
     juz: [
@@ -663,6 +714,8 @@ export const surahs = [
     count: 34,
     title: 'Luqman',
     titleAr: 'لقمان',
+    translatedName: 'لقمان',
+
     index: '031',
     pages: '377',
     juz: [
@@ -681,6 +734,8 @@ export const surahs = [
     count: 30,
     title: 'As-Sajdah',
     titleAr: 'السجدة',
+    translatedName: 'سجدہ',
+
     index: '032',
     pages: '381',
     juz: [
@@ -699,6 +754,8 @@ export const surahs = [
     count: 73,
     title: 'Al-Ahzab',
     titleAr: 'الأحزاب',
+    translatedName: 'متحد گروہ',
+
     index: '033',
     pages: '383',
     juz: [
@@ -724,6 +781,8 @@ export const surahs = [
     count: 54,
     title: 'Saba',
     titleAr: 'سبأ',
+    translatedName: 'سبا',
+
     index: '034',
     pages: '393',
     juz: [
@@ -742,6 +801,8 @@ export const surahs = [
     count: 45,
     title: 'Fatir',
     titleAr: 'فاطر',
+    translatedName: 'پیدا کرنے والا',
+
     index: '035',
     pages: '399',
     juz: [
@@ -760,6 +821,8 @@ export const surahs = [
     count: 83,
     title: 'Yasin',
     titleAr: 'يس',
+    translatedName: 'یٰسٓ',
+
     index: '036',
     pages: '404',
     juz: [
@@ -785,6 +848,8 @@ export const surahs = [
     count: 182,
     title: 'As-Saffat',
     titleAr: 'الصافات',
+    translatedName: 'صف باندھنے والے',
+
     index: '037',
     pages: '410',
     juz: [
@@ -803,6 +868,8 @@ export const surahs = [
     count: 88,
     title: 'Sad',
     titleAr: 'ص',
+    translatedName: 'صٓ',
+
     index: '038',
     pages: '417',
     juz: [
@@ -821,6 +888,8 @@ export const surahs = [
     count: 75,
     title: 'Az-Zumar',
     titleAr: 'الزمر',
+    translatedName: 'گروہ',
+
     index: '039',
     pages: '422',
     juz: [
@@ -846,6 +915,8 @@ export const surahs = [
     count: 85,
     title: 'Ghafir',
     titleAr: 'غافر',
+    translatedName: 'بخشنے والا',
+
     index: '040',
     pages: '431',
     juz: [
@@ -864,6 +935,8 @@ export const surahs = [
     count: 54,
     title: 'Fussilat',
     titleAr: 'فصلت',
+    translatedName: 'مفصل',
+
     index: '041',
     pages: '439',
     juz: [
@@ -889,6 +962,8 @@ export const surahs = [
     count: 53,
     title: 'Ash-Shura',
     titleAr: 'الشورى',
+    translatedName: 'شورٰی',
+
     index: '042',
     pages: '445',
     juz: [
@@ -907,6 +982,8 @@ export const surahs = [
     count: 89,
     title: 'Az-Zukhruf',
     titleAr: 'الزخرف',
+    translatedName: 'سونے کی چمک',
+
     index: '043',
     pages: '451',
     juz: [
@@ -925,6 +1002,8 @@ export const surahs = [
     count: 59,
     title: 'Ad-Dukhan',
     titleAr: 'الدخان',
+    translatedName: 'دھواں',
+
     index: '044',
     pages: '457',
     juz: [
@@ -943,6 +1022,8 @@ export const surahs = [
     count: 37,
     title: 'Al-Jathiya',
     titleAr: 'الجاثية',
+    translatedName: 'زانوٗوں کے بل گری ہوئی',
+
     index: '045',
     pages: '460',
     juz: [
@@ -961,6 +1042,8 @@ export const surahs = [
     count: 35,
     title: 'Al-Ahqaf',
     titleAr: 'الأحقاف',
+    translatedName: 'ریگستان',
+
     index: '046',
     pages: '464',
     juz: [
@@ -979,6 +1062,8 @@ export const surahs = [
     count: 38,
     title: 'Muhammad',
     titleAr: 'محمد',
+    translatedName: 'محمدﷺ',
+
     index: '047',
     pages: '468',
     juz: [
@@ -997,6 +1082,8 @@ export const surahs = [
     count: 29,
     title: 'Al-Fath',
     titleAr: 'الفتح',
+    translatedName: 'فتح',
+
     index: '048',
     pages: '472',
     juz: [
@@ -1015,6 +1102,8 @@ export const surahs = [
     count: 18,
     title: 'Al-Hujurat',
     titleAr: 'الحجرات',
+    translatedName: 'حجرے',
+
     index: '049',
     pages: '477',
     juz: [
@@ -1033,6 +1122,8 @@ export const surahs = [
     count: 45,
     title: 'Qaf',
     titleAr: 'ق',
+    translatedName: 'قٓ',
+
     index: '050',
     pages: '479',
     juz: [
@@ -1051,6 +1142,8 @@ export const surahs = [
     count: 60,
     title: 'Az-Zariyat',
     titleAr: 'الذاريات',
+    translatedName: 'بکھیرنے والیاں',
+
     index: '051',
     pages: '482',
     juz: [
@@ -1076,6 +1169,8 @@ export const surahs = [
     count: 49,
     title: 'At-Tur',
     titleAr: 'الطور',
+    translatedName: 'طور پہاڑ',
+
     index: '052',
     pages: '485',
     juz: [
@@ -1094,6 +1189,8 @@ export const surahs = [
     count: 62,
     title: 'An-Najm',
     titleAr: 'النجم',
+    translatedName: 'ستارہ',
+
     index: '053',
     pages: '487',
     juz: [
@@ -1112,6 +1209,8 @@ export const surahs = [
     count: 55,
     title: 'Al-Qamar',
     titleAr: 'القمر',
+    translatedName: 'چاند',
+
     index: '054',
     pages: '490',
     juz: [
@@ -1130,6 +1229,8 @@ export const surahs = [
     count: 78,
     title: 'Ar-Rahman',
     titleAr: 'الرحمن',
+    translatedName: 'مہربان',
+
     index: '055',
     pages: '493',
     juz: [
@@ -1148,6 +1249,8 @@ export const surahs = [
     count: 96,
     title: 'Al-Waqia',
     titleAr: 'الواقعة',
+    translatedName: 'واقعہ ہونے والی قیامت',
+
     index: '056',
     pages: '496',
     juz: [
@@ -1166,6 +1269,8 @@ export const surahs = [
     count: 29,
     title: 'Al-Hadid',
     titleAr: 'الحديد',
+    translatedName: 'فولاد',
+
     index: '057',
     pages: '499',
     juz: [
@@ -1183,6 +1288,8 @@ export const surahs = [
     type: 'Madaniyah',
     count: 22,
     title: 'Al-Mujadilah',
+    translatedName: 'جھگڑنے والی',
+
     titleAr: 'المجادلة',
     index: '058',
     pages: '504',
@@ -1202,6 +1309,8 @@ export const surahs = [
     count: 24,
     title: 'Al-Hashr',
     titleAr: 'الحشر',
+    translatedName: 'حشر',
+
     index: '059',
     pages: '507',
     juz: [
@@ -1220,6 +1329,8 @@ export const surahs = [
     count: 13,
     title: 'Al-Mumtahinah',
     titleAr: 'الممتحنة',
+    translatedName: 'امتحان لی جانے والی',
+
     index: '060',
     pages: '510',
     juz: [
@@ -1238,6 +1349,8 @@ export const surahs = [
     count: 14,
     title: 'As-Saff',
     titleAr: 'الصف',
+    translatedName: 'صف',
+
     index: '061',
     pages: '513',
     juz: [
@@ -1256,6 +1369,8 @@ export const surahs = [
     count: 11,
     title: "Al-Jumu'ah",
     titleAr: 'الجمعة',
+    translatedName: 'جمعہ',
+
     index: '062',
     pages: '515',
     juz: [
@@ -1274,6 +1389,8 @@ export const surahs = [
     count: 11,
     title: 'Al-Munafiqun',
     titleAr: 'المنافقون',
+    translatedName: 'منافقین',
+
     index: '063',
     pages: '516',
     juz: [
@@ -1292,6 +1409,8 @@ export const surahs = [
     count: 18,
     title: 'At-Taghabun',
     titleAr: 'التغابن',
+    translatedName: 'ہار جیت',
+
     index: '064',
     pages: '518',
     juz: [
@@ -1310,6 +1429,8 @@ export const surahs = [
     count: 12,
     title: 'At-Talaq',
     titleAr: 'الطلاق',
+    translatedName: 'طلاق',
+
     index: '065',
     pages: '520',
     juz: [
@@ -1328,6 +1449,8 @@ export const surahs = [
     count: 12,
     title: 'At-Tahrim',
     titleAr: 'التحريم',
+    translatedName: 'حرمت',
+
     index: '066',
     pages: '522',
     juz: [
@@ -1346,6 +1469,8 @@ export const surahs = [
     count: 30,
     title: 'Al-Mulk',
     titleAr: 'الملك',
+    translatedName: 'ملک',
+
     index: '067',
     pages: '524',
     juz: [
@@ -1364,6 +1489,8 @@ export const surahs = [
     count: 52,
     title: 'Al-Qalam',
     titleAr: 'القلم',
+    translatedName: 'قلم',
+
     index: '068',
     pages: '526',
     juz: [
@@ -1382,6 +1509,8 @@ export const surahs = [
     count: 52,
     title: 'Al-Haqqah',
     titleAr: 'الحاقة',
+    translatedName: 'حق ہونے والی',
+
     index: '069',
     pages: '529',
     juz: [
@@ -1400,6 +1529,8 @@ export const surahs = [
     count: 44,
     title: "Al-Ma'arij",
     titleAr: 'المعارج',
+    translatedName: 'عروج',
+
     index: '070',
     pages: '531',
     juz: [
@@ -1418,6 +1549,8 @@ export const surahs = [
     count: 28,
     title: 'Nuh',
     titleAr: 'نوح',
+    translatedName: 'نوح',
+
     index: '071',
     pages: '533',
     juz: [
@@ -1436,6 +1569,8 @@ export const surahs = [
     count: 28,
     title: 'Al-Jinn',
     titleAr: 'الجن',
+    translatedName: 'جن',
+
     index: '072',
     pages: '534',
     juz: [
@@ -1454,6 +1589,8 @@ export const surahs = [
     count: 20,
     title: 'Al-Muzzammil',
     titleAr: 'المزمل',
+    translatedName: 'کپڑا لپیٹنے والا',
+
     index: '073',
     pages: '537',
     juz: [
@@ -1472,6 +1609,8 @@ export const surahs = [
     count: 56,
     title: 'Al-Muddaththir',
     titleAr: 'المدثر',
+    translatedName: 'کپڑا اوڑھنے والا',
+
     index: '074',
     pages: '538',
     juz: [
@@ -1490,6 +1629,8 @@ export const surahs = [
     count: 40,
     title: 'Al-Qiyamah',
     titleAr: 'القيامة',
+    translatedName: 'قیامۃ',
+
     index: '075',
     pages: '540',
     juz: [
@@ -1508,6 +1649,8 @@ export const surahs = [
     count: 31,
     title: 'Al-Insan',
     titleAr: 'الإنسان',
+    translatedName: 'انسان',
+
     index: '076',
     pages: '542',
     juz: [
@@ -1526,6 +1669,8 @@ export const surahs = [
     count: 50,
     title: 'Al-Mursalat',
     titleAr: 'المرسلات',
+    translatedName: 'بھیجی جانے والی ہوائیں',
+
     index: '077',
     pages: '544',
     juz: [
@@ -1544,6 +1689,8 @@ export const surahs = [
     count: 40,
     title: 'An-Naba',
     titleAr: 'النبأ',
+    translatedName: 'خبر',
+
     index: '078',
     pages: '545',
     juz: [
@@ -1562,6 +1709,8 @@ export const surahs = [
     count: 46,
     title: 'An-Naziat',
     titleAr: 'النازعات',
+    translatedName: 'زور سے کھینچنے والے',
+
     index: '079',
     pages: '547',
     juz: [
@@ -1580,6 +1729,8 @@ export const surahs = [
     count: 42,
     title: 'Abasa',
     titleAr: 'عبس',
+    translatedName: 'تیوری چڑہائی',
+
     index: '080',
     pages: '548',
     juz: [
@@ -1598,6 +1749,8 @@ export const surahs = [
     count: 29,
     title: 'At-Takwir',
     titleAr: 'التكوير',
+    translatedName: 'لپیٹنا',
+
     index: '081',
     pages: '550',
     juz: [
@@ -1616,6 +1769,8 @@ export const surahs = [
     count: 19,
     title: 'Al-Infitar',
     titleAr: 'الإنفطار',
+    translatedName: 'ٹکڑے ہونا',
+
     index: '082',
     pages: '551',
     juz: [
@@ -1634,6 +1789,8 @@ export const surahs = [
     count: 36,
     title: 'Al-Mutaffifin',
     titleAr: 'المطففين',
+    translatedName: 'ناپ تول میں کمی کرنے والے',
+
     index: '083',
     pages: '552',
     juz: [
@@ -1652,6 +1809,8 @@ export const surahs = [
     count: 25,
     title: 'Al-Inshiqaq',
     titleAr: 'الإنشقاق',
+    translatedName: 'پھٹنا',
+
     index: '084',
     pages: '553',
     juz: [
@@ -1670,6 +1829,8 @@ export const surahs = [
     count: 22,
     title: 'Al-Buruj',
     titleAr: 'البروج',
+    translatedName: 'برج',
+
     index: '085',
     pages: '554',
     juz: [
@@ -1688,6 +1849,8 @@ export const surahs = [
     count: 17,
     title: 'At-Tariq',
     titleAr: 'الطارق',
+    translatedName: 'رات کو آنے والا',
+
     index: '086',
     pages: '555',
     juz: [
@@ -1706,6 +1869,8 @@ export const surahs = [
     count: 19,
     title: 'Al-Ala',
     titleAr: 'الأعلى',
+    translatedName: 'اعلی',
+
     index: '087',
     pages: '556',
     juz: [
@@ -1724,6 +1889,8 @@ export const surahs = [
     count: 26,
     title: 'Al-Ghashiyah',
     titleAr: 'الغاشية',
+    translatedName: 'چھا جانے والی',
+
     index: '088',
     pages: '556',
     juz: [
@@ -1742,6 +1909,8 @@ export const surahs = [
     count: 30,
     title: 'Al-Fajr',
     titleAr: 'الفجر',
+    translatedName: 'فجر',
+
     index: '089',
     pages: '557',
     juz: [
@@ -1760,6 +1929,8 @@ export const surahs = [
     count: 20,
     title: 'Al-Balad',
     titleAr: 'البلد',
+    translatedName: 'شہر',
+
     index: '090',
     pages: '559',
     juz: [
@@ -1778,6 +1949,8 @@ export const surahs = [
     count: 15,
     title: 'Ash-Shams',
     titleAr: 'الشمس',
+    translatedName: 'آفتاب',
+
     index: '091',
     pages: '559',
     juz: [
@@ -1796,6 +1969,8 @@ export const surahs = [
     count: 21,
     title: 'Al-Lail',
     titleAr: 'الليل',
+    translatedName: 'رات',
+
     index: '092',
     pages: '560',
     juz: [
@@ -1814,6 +1989,8 @@ export const surahs = [
     count: 11,
     title: 'Ad-Duha',
     titleAr: 'الضحى',
+    translatedName: 'دن کا چڑھنا',
+
     index: '093',
     pages: '561',
     juz: [
@@ -1832,6 +2009,8 @@ export const surahs = [
     count: 8,
     title: 'Ash-Sharh',
     titleAr: 'الشرح',
+    translatedName: 'تسکین',
+
     index: '094',
     pages: '561',
     juz: [
@@ -1850,6 +2029,8 @@ export const surahs = [
     count: 8,
     title: 'At-Tin',
     titleAr: 'التين',
+    translatedName: 'انجیر',
+
     index: '095',
     pages: '562',
     juz: [
@@ -1868,6 +2049,8 @@ export const surahs = [
     count: 19,
     title: 'Al-Alaq',
     titleAr: 'العلق',
+    translatedName: 'جما ہوا خون',
+
     index: '096',
     pages: '562',
     juz: [
@@ -1886,6 +2069,8 @@ export const surahs = [
     count: 5,
     title: 'Al-Qadr',
     titleAr: 'القدر',
+    translatedName: 'شب قدر',
+
     index: '097',
     pages: '563',
     juz: [
@@ -1904,6 +2089,8 @@ export const surahs = [
     count: 8,
     title: 'Al-Bayinah',
     titleAr: 'البينة',
+    translatedName: 'ثبوت',
+
     index: '098',
     pages: '563',
     juz: [
@@ -1922,6 +2109,8 @@ export const surahs = [
     count: 8,
     title: 'Az-Zalzalah',
     titleAr: 'الزلزلة',
+    translatedName: 'زلزلہ',
+
     index: '099',
     pages: '564',
     juz: [
@@ -1940,6 +2129,8 @@ export const surahs = [
     count: 11,
     title: 'Al-Adiyat',
     titleAr: 'العاديات',
+    translatedName: 'دوڑنے والے گھوڑے',
+
     index: '100',
     pages: '564',
     juz: [
@@ -1958,6 +2149,8 @@ export const surahs = [
     count: 11,
     title: 'Al-Qariah',
     titleAr: 'القارعة',
+    translatedName: 'کھڑکھڑاہٹ',
+
     index: '101',
     pages: '565',
     juz: [
@@ -1976,6 +2169,8 @@ export const surahs = [
     count: 8,
     title: 'Al-Takathur',
     titleAr: 'التكاثر',
+    translatedName: 'کثرت',
+
     index: '102',
     pages: '565',
     juz: [
@@ -1994,6 +2189,8 @@ export const surahs = [
     count: 3,
     title: 'Al-Asr',
     titleAr: 'العصر',
+    translatedName: 'زمانہ',
+
     index: '103',
     pages: '566',
     juz: [
@@ -2012,6 +2209,8 @@ export const surahs = [
     count: 9,
     title: 'Al-Humazah',
     titleAr: 'الهمزة',
+    translatedName: 'عیب لگانے والا',
+
     index: '104',
     pages: '566',
     juz: [
@@ -2030,6 +2229,8 @@ export const surahs = [
     count: 5,
     title: 'Al-Fil',
     titleAr: 'الفيل',
+    translatedName: 'ہاتھی',
+
     index: '105',
     pages: '566',
     juz: [
@@ -2048,6 +2249,8 @@ export const surahs = [
     count: 4,
     title: 'Quraish',
     titleAr: 'قريش',
+    translatedName: 'قریش',
+
     index: '106',
     pages: '567',
     juz: [
@@ -2066,6 +2269,8 @@ export const surahs = [
     count: 7,
     title: "Al-Ma'un",
     titleAr: 'الماعون',
+    translatedName: 'تھوڑی سی چیز',
+
     index: '107',
     pages: '567',
     juz: [
@@ -2084,6 +2289,8 @@ export const surahs = [
     count: 3,
     title: 'Al-Kauthar',
     titleAr: 'الكوثر',
+    translatedName: 'جنت کی نہر',
+
     index: '108',
     pages: '567',
     juz: [
@@ -2102,6 +2309,8 @@ export const surahs = [
     count: 6,
     title: 'Al-Kafirun',
     titleAr: 'الكافرون',
+    translatedName: 'کافرین',
+
     index: '109',
     pages: '568',
     juz: [
@@ -2120,6 +2329,8 @@ export const surahs = [
     count: 3,
     title: 'An-Nasr',
     titleAr: 'النصر',
+    translatedName: 'نصرت',
+
     index: '110',
     pages: '568',
     juz: [
@@ -2138,6 +2349,8 @@ export const surahs = [
     count: 5,
     title: 'Al-Masad',
     titleAr: 'المسد',
+    translatedName: 'خوب بٹی ہوئی',
+
     index: '111',
     pages: '568',
     juz: [
@@ -2156,6 +2369,8 @@ export const surahs = [
     count: 4,
     title: 'Al-Ikhlas',
     titleAr: 'الإخلاص',
+    translatedName: 'اخلاص',
+
     index: '112',
     pages: '569',
     juz: [
@@ -2174,6 +2389,8 @@ export const surahs = [
     count: 5,
     title: 'Al-Falaq',
     titleAr: 'الفلق',
+    translatedName: 'صبح',
+
     index: '113',
     pages: '569',
     juz: [
@@ -2192,6 +2409,8 @@ export const surahs = [
     count: 6,
     title: 'An-Nas',
     titleAr: 'الناس',
+    translatedName: 'انسان',
+
     index: '114',
     pages: '569',
     juz: [
