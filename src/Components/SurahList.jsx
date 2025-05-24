@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {
   FlatList,
   Text,
@@ -10,37 +10,15 @@ import {
 import {useNavigation} from '@react-navigation/native';
 import {surahs} from '../../resources/surahs';
 import Search from './Search';
-import {Audio} from 'expo-av';
 
 const SurahList = () => {
   const navigation = useNavigation();
   const [searchTerm, setSearchTerm] = useState('');
-  const [sound, setSound] = useState();
-
-  async function playSound() {
-    console.log('Lodaing track');
-    const {sound} = await Audio.Sound.createAsync(
-      require('../audioFiles/1.mp3'),
-    );
-    setSound(sound);
-
-    console.log('Playing Sound');
-    await sound.playAsync();
-  }
-
-  useEffect(() => {
-    return sound
-      ? () => {
-          console.log('Unloading Sound');
-          sound.unloadAsync();
-        }
-      : undefined;
-  }, [sound]);
 
   const filteredSurahs = surahs.filter(
     item =>
-      item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.titleAr.includes(searchTerm),
+      item.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.name.includes(searchTerm),
   );
 
   return (
@@ -48,21 +26,21 @@ const SurahList = () => {
       <Search onSearch={setSearchTerm} />
       <FlatList
         data={filteredSurahs}
-        keyExtractor={(item, index) => item.index + '-' + index}
+        keyExtractor={(item, index) => item.id + '-' + index}
         contentContainerStyle={styles.content}
         renderItem={({item}) => (
           <TouchableOpacity
             onPress={() => navigation.navigate('SurahPage', {item})}>
             <View style={styles.surahCard}>
               <View style={styles.surahNumberContainer}>
-                <Text style={styles.surahNumber}>
-                  {parseInt(item.index, 10)}
-                </Text>
+                <Text style={styles.surahNumber}>{item.id}</Text>
               </View>
               <View style={styles.surahInfo}>
-                <Text style={styles.surahTitle}>{item.title}</Text>
-                <Text style={styles.surahSubTitle}>{item.titleAr}</Text>
-                <Text style={styles.surahAyahCount}>{item.count} Ayahs</Text>
+                <Text style={styles.surahTitle}>{item.transliteration}</Text>
+                <Text style={styles.surahSubTitle}>{item.name}</Text>
+                <Text style={styles.surahAyahCount}>
+                  {item.total_verses} Ayahs
+                </Text>
               </View>
               <View style={styles.actions}>
                 <TouchableOpacity style={styles.iconButton}>
@@ -106,7 +84,6 @@ const styles = StyleSheet.create({
     color: '#2c3e50',
     transform: [{rotate: '-45deg'}],
   },
-
   surahInfo: {
     flex: 1,
     marginHorizontal: 12,

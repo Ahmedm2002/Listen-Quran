@@ -1,71 +1,13 @@
-import axios from 'axios';
-import React, {useEffect, useState} from 'react';
-import {
-  View,
-  Text,
-  ActivityIndicator,
-  StyleSheet,
-  FlatList,
-} from 'react-native';
+import React from 'react';
+import {View, StyleSheet} from 'react-native';
 import SurahDetails from '../Components/SurahDetails';
 
 const SurahPage = ({route}: any) => {
   const surah = route?.params?.item;
-  const surahNumber = surah?.index;
-
-  const [ayahs, setAyahs] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  const getSurahText = async () => {
-    try {
-      const response = await axios.get(
-        `http://api.alquran.cloud/v1/surah/${surahNumber}/ar.alafasy`,
-      );
-
-      setAyahs(response.data.data.ayahs);
-      console.log('Response of Api: ', response.data);
-    } catch (err) {
-      console.log(err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    getSurahText();
-  }, []);
-
-  if (!surah) {
-    return (
-      <View style={styles.center}>
-        <Text style={styles.error}>Error: Surah data not found</Text>
-      </View>
-    );
-  }
-
-  const isBismillahRequired = !['At-Tawbah', 'التوبة'].includes(surah.title);
 
   return (
     <View style={styles.container}>
-      {loading ? (
-        <ActivityIndicator size="large" color="#2e7d32" />
-      ) : (
-        <>
-          <SurahDetails surah={surah} />
-
-          <FlatList
-            data={ayahs}
-            keyExtractor={item => item.number.toString()}
-            renderItem={({item}) => (
-              <View style={styles.ayahBox}>
-                <Text style={styles.ayahText}>{item.text}</Text>
-                <Text style={styles.ayahNumber}>﴿{item.numberInSurah}﴾</Text>
-              </View>
-            )}
-            contentContainerStyle={{paddingBottom: 60}}
-          />
-        </>
-      )}
+      <SurahDetails surah={surah} />
     </View>
   );
 };

@@ -1,2427 +1,914 @@
 export const surahs = [
   {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 7,
-    title: 'Al-Fatiha',
-    titleAr: 'الفاتحة',
-    translatedName: 'کھولنے والی',
-    index: '001',
-    pages: '1',
-    juz: [
-      {
-        index: '01',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_7',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-
-    count: 286,
-    title: 'Al-Baqara',
-    titleAr: 'البقرة',
-    translatedName: 'گائے',
-    index: '002',
-    pages: '2',
-    juz: [
-      {
-        index: '01',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_141',
-        },
-      },
-      {
-        index: '02',
-        verse: {
-          start: 'verse_142',
-          end: 'verse_252',
-        },
-      },
-      {
-        index: '03',
-        verse: {
-          start: 'verse_253',
-          end: 'verse_286',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 200,
-    title: 'Al-Imran',
-    titleAr: 'آل عمران',
-    translatedName: 'عمران کا خاندان',
-    index: '003',
-    pages: '45',
-    juz: [
-      {
-        index: '03',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_92',
-        },
-      },
-      {
-        index: '04',
-        verse: {
-          start: 'verse_93',
-          end: 'verse_200',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 176,
-    title: "An-Nisaa'",
-    titleAr: 'النساء',
-    translatedName: 'عورت',
-
-    index: '004',
-    pages: '69',
-    juz: [
-      {
-        index: '04',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_23',
-        },
-      },
-      {
-        index: '05',
-        verse: {
-          start: 'verse_24',
-          end: 'verse_147',
-        },
-      },
-      {
-        index: '06',
-        verse: {
-          start: 'verse_148',
-          end: 'verse_176',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 120,
-    title: "Al-Ma'ida",
-    titleAr: 'المائدة',
-    translatedName: 'دسترخوان',
-
-    index: '005',
-    pages: '95',
-    juz: [
-      {
-        index: '06',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_81',
-        },
-      },
-      {
-        index: '07',
-        verse: {
-          start: 'verse_82',
-          end: 'verse_120',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 165,
-    title: "Al-An'am",
-    titleAr: 'الأنعام',
-    translatedName: 'مویشی',
-
-    index: '006',
-    pages: '115',
-    juz: [
-      {
-        index: '07',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_110',
-        },
-      },
-      {
-        index: '08',
-        verse: {
-          start: 'verse_111',
-          end: 'verse_165',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 206,
-    title: 'Al-Ahraf',
-    titleAr: 'الأعراف',
-    translatedName: 'اونچی جگہ',
-
-    index: '007',
-    pages: '136',
-    juz: [
-      {
-        index: '08',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_87',
-        },
-      },
-      {
-        index: '09',
-        verse: {
-          start: 'verse_88',
-          end: 'verse_206',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 75,
-    title: 'Al-Anfal',
-    titleAr: 'الأنفال',
-    translatedName: 'مال غنیمت',
-
-    index: '008',
-    pages: '160',
-    juz: [
-      {
-        index: '09',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_40',
-        },
-      },
-      {
-        index: '10',
-        verse: {
-          start: 'verse_41',
-          end: 'verse_75',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 129,
-    title: 'Al-Tawba',
-    titleAr: 'التوبة',
-    translatedName: 'توبہ',
-
-    index: '009',
-    pages: '169',
-    juz: [
-      {
-        index: '10',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_92',
-        },
-      },
-      {
-        index: '11',
-        verse: {
-          start: 'verse_93',
-          end: 'verse_129',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 109,
-    title: 'Yunus',
-    titleAr: 'يونس',
-    translatedName: 'یونس',
-
-    index: '010',
-    pages: '187',
-    juz: [
-      {
-        index: '11',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_109',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 123,
-    title: 'Hud',
-    titleAr: 'هود',
-    translatedName: 'حود',
-
-    index: '011',
-    pages: '199',
-    juz: [
-      {
-        index: '11',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_5',
-        },
-      },
-      {
-        index: '12',
-        verse: {
-          start: 'verse_6',
-          end: 'verse_123',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 111,
-    title: 'Yusuf',
-    titleAr: 'يوسف',
-    translatedName: 'یوسف',
-
-    index: '012',
-    pages: '212',
-    juz: [
-      {
-        index: '12',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_52',
-        },
-      },
-      {
-        index: '13',
-        verse: {
-          start: 'verse_53',
-          end: 'verse_111',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 43,
-    title: "Ar-Ra'd",
-    titleAr: 'الرعد',
-    translatedName: 'گرج',
-
-    index: '013',
-    pages: '225',
-    juz: [
-      {
-        index: '13',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_43',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 52,
-    title: 'Ibrahim',
-    titleAr: 'إبراهيم',
-    translatedName: 'ابراہیم',
-
-    index: '014',
-    pages: '231',
-    juz: [
-      {
-        index: '13',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_52',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 99,
-    title: 'Al-Hijr',
-    titleAr: 'الحجر',
-    translatedName: 'پتھر',
-
-    index: '015',
-    pages: '237',
-    juz: [
-      {
-        index: '14',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_99',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 128,
-    title: 'An-Nahl',
-    titleAr: 'النحل',
-    translatedName: 'شہد کی مکھی',
-
-    index: '016',
-    pages: '242',
-    juz: [
-      {
-        index: '14',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_128',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 111,
-    title: 'Al-Israa',
-    titleAr: 'الإسراء',
-    translatedName: 'رات کا صفر',
-
-    index: '017',
-    pages: '255',
-    juz: [
-      {
-        index: '15',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_111',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 110,
-    title: 'Al-Kahf',
-    titleAr: 'الكهف',
-    translatedName: 'غار',
-
-    index: '018',
-    pages: '266',
-    juz: [
-      {
-        index: '15',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_74',
-        },
-      },
-      {
-        index: '16',
-        verse: {
-          start: 'verse_75',
-          end: 'verse_110',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 98,
-    title: 'Maryam',
-    titleAr: 'مريم',
-    translatedName: 'مریم',
-
-    index: '019',
-    pages: '277',
-    juz: [
-      {
-        index: '16',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_98',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 135,
-    title: 'Taha',
-    titleAr: 'طه',
-    translatedName: 'طٰہٰ',
-
-    index: '020',
-    pages: '284',
-    juz: [
-      {
-        index: '16',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_135',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 112,
-    title: 'Al-Anbiya',
-    titleAr: 'الأنبياء',
-    translatedName: 'پیغمبر',
-
-    index: '021',
-    pages: '294',
-    juz: [
-      {
-        index: '17',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_112',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 78,
-    title: 'Al-Hajj',
-    titleAr: 'الحج',
-    translatedName: 'حج',
-
-    index: '022',
-    pages: '302',
-    juz: [
-      {
-        index: '17',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_78',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 118,
-    title: 'Al-Muminun',
-    titleAr: 'المؤمنون',
-    translatedName: 'مومنین',
-
-    index: '023',
-    pages: '311',
-    juz: [
-      {
-        index: '18',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_118',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 64,
-    title: 'An-Nur',
-    titleAr: 'النور',
-    translatedName: 'نور',
-
-    index: '024',
-    pages: '319',
-    juz: [
-      {
-        index: '18',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_64',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 77,
-    title: 'Al-Furqan',
-    titleAr: 'الفرقان',
-    translatedName: 'صحیح اور غلط میں فرق کرنے والی کتاب',
-
-    index: '025',
-    pages: '329',
-    juz: [
-      {
-        index: '18',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_20',
-        },
-      },
-      {
-        index: '19',
-        verse: {
-          start: 'verse_21',
-          end: 'verse_77',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 227,
-    title: 'Ash-Shuara',
-    titleAr: 'الشعراء',
-    translatedName: 'شعراٗ',
-
-    index: '026',
-    pages: '335',
-    juz: [
-      {
-        index: '19',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_227',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 93,
-    title: 'An-Naml',
-    titleAr: 'النمل',
-    translatedName: 'چیونٹی',
-
-    index: '027',
-    pages: '345',
-    juz: [
-      {
-        index: '19',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_55',
-        },
-      },
-      {
-        index: '20',
-        verse: {
-          start: 'verse_56',
-          end: 'verse_93',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 88,
-    title: 'Al-Qasas',
-    titleAr: 'القصص',
-    translatedName: 'قصے',
-
-    index: '028',
-    pages: '354',
-    juz: [
-      {
-        index: '20',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_88',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 69,
-    title: 'Al-Ankabut',
-    titleAr: 'العنكبوت',
-    translatedName: 'مکڑی',
-
-    index: '029',
-    pages: '364',
-    juz: [
-      {
-        index: '20',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_45',
-        },
-      },
-      {
-        index: '21',
-        verse: {
-          start: 'verse_46',
-          end: 'verse_69',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 60,
-    title: 'Ar-Rum',
-    titleAr: 'الروم',
-    translatedName: 'روم',
-
-    index: '030',
-    pages: '371',
-    juz: [
-      {
-        index: '21',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_60',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 34,
-    title: 'Luqman',
-    titleAr: 'لقمان',
-    translatedName: 'لقمان',
-
-    index: '031',
-    pages: '377',
-    juz: [
-      {
-        index: '21',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_34',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 30,
-    title: 'As-Sajdah',
-    titleAr: 'السجدة',
-    translatedName: 'سجدہ',
-
-    index: '032',
-    pages: '381',
-    juz: [
-      {
-        index: '21',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_30',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 73,
-    title: 'Al-Ahzab',
-    titleAr: 'الأحزاب',
-    translatedName: 'متحد گروہ',
-
-    index: '033',
-    pages: '383',
-    juz: [
-      {
-        index: '21',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_30',
-        },
-      },
-      {
-        index: '22',
-        verse: {
-          start: 'verse_31',
-          end: 'verse_73',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 54,
-    title: 'Saba',
-    titleAr: 'سبأ',
-    translatedName: 'سبا',
-
-    index: '034',
-    pages: '393',
-    juz: [
-      {
-        index: '22',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_54',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 45,
-    title: 'Fatir',
-    titleAr: 'فاطر',
-    translatedName: 'پیدا کرنے والا',
-
-    index: '035',
-    pages: '399',
-    juz: [
-      {
-        index: '22',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_45',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 83,
-    title: 'Yasin',
-    titleAr: 'يس',
-    translatedName: 'یٰسٓ',
-
-    index: '036',
-    pages: '404',
-    juz: [
-      {
-        index: '22',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_27',
-        },
-      },
-      {
-        index: '23',
-        verse: {
-          start: 'verse_28',
-          end: 'verse_83',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 182,
-    title: 'As-Saffat',
-    titleAr: 'الصافات',
-    translatedName: 'صف باندھنے والے',
-
-    index: '037',
-    pages: '410',
-    juz: [
-      {
-        index: '23',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_182',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 88,
-    title: 'Sad',
-    titleAr: 'ص',
-    translatedName: 'صٓ',
-
-    index: '038',
-    pages: '417',
-    juz: [
-      {
-        index: '23',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_88',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 75,
-    title: 'Az-Zumar',
-    titleAr: 'الزمر',
-    translatedName: 'گروہ',
-
-    index: '039',
-    pages: '422',
-    juz: [
-      {
-        index: '23',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_31',
-        },
-      },
-      {
-        index: '24',
-        verse: {
-          start: 'verse_32',
-          end: 'verse_75',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 85,
-    title: 'Ghafir',
-    titleAr: 'غافر',
-    translatedName: 'بخشنے والا',
-
-    index: '040',
-    pages: '431',
-    juz: [
-      {
-        index: '24',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_85',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 54,
-    title: 'Fussilat',
-    titleAr: 'فصلت',
-    translatedName: 'مفصل',
-
-    index: '041',
-    pages: '439',
-    juz: [
-      {
-        index: '24',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_46',
-        },
-      },
-      {
-        index: '25',
-        verse: {
-          start: 'verse_47',
-          end: 'verse_54',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 53,
-    title: 'Ash-Shura',
-    titleAr: 'الشورى',
-    translatedName: 'شورٰی',
-
-    index: '042',
-    pages: '445',
-    juz: [
-      {
-        index: '25',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_53',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 89,
-    title: 'Az-Zukhruf',
-    titleAr: 'الزخرف',
-    translatedName: 'سونے کی چمک',
-
-    index: '043',
-    pages: '451',
-    juz: [
-      {
-        index: '25',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_89',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 59,
-    title: 'Ad-Dukhan',
-    titleAr: 'الدخان',
-    translatedName: 'دھواں',
-
-    index: '044',
-    pages: '457',
-    juz: [
-      {
-        index: '25',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_59',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 37,
-    title: 'Al-Jathiya',
-    titleAr: 'الجاثية',
-    translatedName: 'زانوٗوں کے بل گری ہوئی',
-
-    index: '045',
-    pages: '460',
-    juz: [
-      {
-        index: '25',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_37',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 35,
-    title: 'Al-Ahqaf',
-    titleAr: 'الأحقاف',
-    translatedName: 'ریگستان',
-
-    index: '046',
-    pages: '464',
-    juz: [
-      {
-        index: '26',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_35',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 38,
-    title: 'Muhammad',
-    titleAr: 'محمد',
-    translatedName: 'محمدﷺ',
-
-    index: '047',
-    pages: '468',
-    juz: [
-      {
-        index: '26',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_38',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 29,
-    title: 'Al-Fath',
-    titleAr: 'الفتح',
-    translatedName: 'فتح',
-
-    index: '048',
-    pages: '472',
-    juz: [
-      {
-        index: '26',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_29',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 18,
-    title: 'Al-Hujurat',
-    titleAr: 'الحجرات',
-    translatedName: 'حجرے',
-
-    index: '049',
-    pages: '477',
-    juz: [
-      {
-        index: '26',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_18',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 45,
-    title: 'Qaf',
-    titleAr: 'ق',
-    translatedName: 'قٓ',
-
-    index: '050',
-    pages: '479',
-    juz: [
-      {
-        index: '26',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_45',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 60,
-    title: 'Az-Zariyat',
-    titleAr: 'الذاريات',
-    translatedName: 'بکھیرنے والیاں',
-
-    index: '051',
-    pages: '482',
-    juz: [
-      {
-        index: '26',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_30',
-        },
-      },
-      {
-        index: '27',
-        verse: {
-          start: 'verse_31',
-          end: 'verse_60',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 49,
-    title: 'At-Tur',
-    titleAr: 'الطور',
-    translatedName: 'طور پہاڑ',
-
-    index: '052',
-    pages: '485',
-    juz: [
-      {
-        index: '27',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_49',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 62,
-    title: 'An-Najm',
-    titleAr: 'النجم',
-    translatedName: 'ستارہ',
-
-    index: '053',
-    pages: '487',
-    juz: [
-      {
-        index: '27',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_62',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 55,
-    title: 'Al-Qamar',
-    titleAr: 'القمر',
-    translatedName: 'چاند',
-
-    index: '054',
-    pages: '490',
-    juz: [
-      {
-        index: '27',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_55',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 78,
-    title: 'Ar-Rahman',
-    titleAr: 'الرحمن',
-    translatedName: 'مہربان',
-
-    index: '055',
-    pages: '493',
-    juz: [
-      {
-        index: '27',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_78',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 96,
-    title: 'Al-Waqia',
-    titleAr: 'الواقعة',
-    translatedName: 'واقعہ ہونے والی قیامت',
-
-    index: '056',
-    pages: '496',
-    juz: [
-      {
-        index: '27',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_96',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 29,
-    title: 'Al-Hadid',
-    titleAr: 'الحديد',
-    translatedName: 'فولاد',
-
-    index: '057',
-    pages: '499',
-    juz: [
-      {
-        index: '27',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_29',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 22,
-    title: 'Al-Mujadilah',
-    translatedName: 'جھگڑنے والی',
-
-    titleAr: 'المجادلة',
-    index: '058',
-    pages: '504',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_22',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 24,
-    title: 'Al-Hashr',
-    titleAr: 'الحشر',
-    translatedName: 'حشر',
-
-    index: '059',
-    pages: '507',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_24',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 13,
-    title: 'Al-Mumtahinah',
-    titleAr: 'الممتحنة',
-    translatedName: 'امتحان لی جانے والی',
-
-    index: '060',
-    pages: '510',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_13',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 14,
-    title: 'As-Saff',
-    titleAr: 'الصف',
-    translatedName: 'صف',
-
-    index: '061',
-    pages: '513',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_14',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 11,
-    title: "Al-Jumu'ah",
-    titleAr: 'الجمعة',
-    translatedName: 'جمعہ',
-
-    index: '062',
-    pages: '515',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_11',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 11,
-    title: 'Al-Munafiqun',
-    titleAr: 'المنافقون',
-    translatedName: 'منافقین',
-
-    index: '063',
-    pages: '516',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_11',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 18,
-    title: 'At-Taghabun',
-    titleAr: 'التغابن',
-    translatedName: 'ہار جیت',
-
-    index: '064',
-    pages: '518',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_18',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 12,
-    title: 'At-Talaq',
-    titleAr: 'الطلاق',
-    translatedName: 'طلاق',
-
-    index: '065',
-    pages: '520',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_12',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 12,
-    title: 'At-Tahrim',
-    titleAr: 'التحريم',
-    translatedName: 'حرمت',
-
-    index: '066',
-    pages: '522',
-    juz: [
-      {
-        index: '28',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_12',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 30,
-    title: 'Al-Mulk',
-    titleAr: 'الملك',
-    translatedName: 'ملک',
-
-    index: '067',
-    pages: '524',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_30',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 52,
-    title: 'Al-Qalam',
-    titleAr: 'القلم',
-    translatedName: 'قلم',
-
-    index: '068',
-    pages: '526',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_52',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 52,
-    title: 'Al-Haqqah',
-    titleAr: 'الحاقة',
-    translatedName: 'حق ہونے والی',
-
-    index: '069',
-    pages: '529',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_52',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 44,
-    title: "Al-Ma'arij",
-    titleAr: 'المعارج',
-    translatedName: 'عروج',
-
-    index: '070',
-    pages: '531',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_44',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 28,
-    title: 'Nuh',
-    titleAr: 'نوح',
-    translatedName: 'نوح',
-
-    index: '071',
-    pages: '533',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_28',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 28,
-    title: 'Al-Jinn',
-    titleAr: 'الجن',
-    translatedName: 'جن',
-
-    index: '072',
-    pages: '534',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_28',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 20,
-    title: 'Al-Muzzammil',
-    titleAr: 'المزمل',
-    translatedName: 'کپڑا لپیٹنے والا',
-
-    index: '073',
-    pages: '537',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_20',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 56,
-    title: 'Al-Muddaththir',
-    titleAr: 'المدثر',
-    translatedName: 'کپڑا اوڑھنے والا',
-
-    index: '074',
-    pages: '538',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_56',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 40,
-    title: 'Al-Qiyamah',
-    titleAr: 'القيامة',
-    translatedName: 'قیامۃ',
-
-    index: '075',
-    pages: '540',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_40',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 31,
-    title: 'Al-Insan',
-    titleAr: 'الإنسان',
-    translatedName: 'انسان',
-
-    index: '076',
-    pages: '542',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_31',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 50,
-    title: 'Al-Mursalat',
-    titleAr: 'المرسلات',
-    translatedName: 'بھیجی جانے والی ہوائیں',
-
-    index: '077',
-    pages: '544',
-    juz: [
-      {
-        index: '29',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_50',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 40,
-    title: 'An-Naba',
-    titleAr: 'النبأ',
-    translatedName: 'خبر',
-
-    index: '078',
-    pages: '545',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_40',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 46,
-    title: 'An-Naziat',
-    titleAr: 'النازعات',
-    translatedName: 'زور سے کھینچنے والے',
-
-    index: '079',
-    pages: '547',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_46',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 42,
-    title: 'Abasa',
-    titleAr: 'عبس',
-    translatedName: 'تیوری چڑہائی',
-
-    index: '080',
-    pages: '548',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_42',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 29,
-    title: 'At-Takwir',
-    titleAr: 'التكوير',
-    translatedName: 'لپیٹنا',
-
-    index: '081',
-    pages: '550',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_29',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 19,
-    title: 'Al-Infitar',
-    titleAr: 'الإنفطار',
-    translatedName: 'ٹکڑے ہونا',
-
-    index: '082',
-    pages: '551',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_19',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 36,
-    title: 'Al-Mutaffifin',
-    titleAr: 'المطففين',
-    translatedName: 'ناپ تول میں کمی کرنے والے',
-
-    index: '083',
-    pages: '552',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_36',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 25,
-    title: 'Al-Inshiqaq',
-    titleAr: 'الإنشقاق',
-    translatedName: 'پھٹنا',
-
-    index: '084',
-    pages: '553',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_25',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 22,
-    title: 'Al-Buruj',
-    titleAr: 'البروج',
-    translatedName: 'برج',
-
-    index: '085',
-    pages: '554',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_22',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 17,
-    title: 'At-Tariq',
-    titleAr: 'الطارق',
-    translatedName: 'رات کو آنے والا',
-
-    index: '086',
-    pages: '555',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_17',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 19,
-    title: 'Al-Ala',
-    titleAr: 'الأعلى',
-    translatedName: 'اعلی',
-
-    index: '087',
-    pages: '556',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_19',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 26,
-    title: 'Al-Ghashiyah',
-    titleAr: 'الغاشية',
-    translatedName: 'چھا جانے والی',
-
-    index: '088',
-    pages: '556',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_26',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 30,
-    title: 'Al-Fajr',
-    titleAr: 'الفجر',
-    translatedName: 'فجر',
-
-    index: '089',
-    pages: '557',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_30',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 20,
-    title: 'Al-Balad',
-    titleAr: 'البلد',
-    translatedName: 'شہر',
-
-    index: '090',
-    pages: '559',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_20',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 15,
-    title: 'Ash-Shams',
-    titleAr: 'الشمس',
-    translatedName: 'آفتاب',
-
-    index: '091',
-    pages: '559',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_15',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 21,
-    title: 'Al-Lail',
-    titleAr: 'الليل',
-    translatedName: 'رات',
-
-    index: '092',
-    pages: '560',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_21',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 11,
-    title: 'Ad-Duha',
-    titleAr: 'الضحى',
-    translatedName: 'دن کا چڑھنا',
-
-    index: '093',
-    pages: '561',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_11',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 8,
-    title: 'Ash-Sharh',
-    titleAr: 'الشرح',
-    translatedName: 'تسکین',
-
-    index: '094',
-    pages: '561',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_8',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 8,
-    title: 'At-Tin',
-    titleAr: 'التين',
-    translatedName: 'انجیر',
-
-    index: '095',
-    pages: '562',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_8',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 19,
-    title: 'Al-Alaq',
-    titleAr: 'العلق',
-    translatedName: 'جما ہوا خون',
-
-    index: '096',
-    pages: '562',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_19',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 5,
-    title: 'Al-Qadr',
-    titleAr: 'القدر',
-    translatedName: 'شب قدر',
-
-    index: '097',
-    pages: '563',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_5',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 8,
-    title: 'Al-Bayinah',
-    titleAr: 'البينة',
-    translatedName: 'ثبوت',
-
-    index: '098',
-    pages: '563',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_8',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 8,
-    title: 'Az-Zalzalah',
-    titleAr: 'الزلزلة',
-    translatedName: 'زلزلہ',
-
-    index: '099',
-    pages: '564',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_8',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 11,
-    title: 'Al-Adiyat',
-    titleAr: 'العاديات',
-    translatedName: 'دوڑنے والے گھوڑے',
-
-    index: '100',
-    pages: '564',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_11',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 11,
-    title: 'Al-Qariah',
-    titleAr: 'القارعة',
-    translatedName: 'کھڑکھڑاہٹ',
-
-    index: '101',
-    pages: '565',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_11',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 8,
-    title: 'Al-Takathur',
-    titleAr: 'التكاثر',
-    translatedName: 'کثرت',
-
-    index: '102',
-    pages: '565',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_8',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 3,
-    title: 'Al-Asr',
-    titleAr: 'العصر',
-    translatedName: 'زمانہ',
-
-    index: '103',
-    pages: '566',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_3',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 9,
-    title: 'Al-Humazah',
-    titleAr: 'الهمزة',
-    translatedName: 'عیب لگانے والا',
-
-    index: '104',
-    pages: '566',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_9',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 5,
-    title: 'Al-Fil',
-    titleAr: 'الفيل',
-    translatedName: 'ہاتھی',
-
-    index: '105',
-    pages: '566',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_5',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 4,
-    title: 'Quraish',
-    titleAr: 'قريش',
-    translatedName: 'قریش',
-
-    index: '106',
-    pages: '567',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_4',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 7,
-    title: "Al-Ma'un",
-    titleAr: 'الماعون',
-    translatedName: 'تھوڑی سی چیز',
-
-    index: '107',
-    pages: '567',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_7',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 3,
-    title: 'Al-Kauthar',
-    titleAr: 'الكوثر',
-    translatedName: 'جنت کی نہر',
-
-    index: '108',
-    pages: '567',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_3',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 6,
-    title: 'Al-Kafirun',
-    titleAr: 'الكافرون',
-    translatedName: 'کافرین',
-
-    index: '109',
-    pages: '568',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_6',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Medina',
-    type: 'Madaniyah',
-    count: 3,
-    title: 'An-Nasr',
-    titleAr: 'النصر',
-    translatedName: 'نصرت',
-
-    index: '110',
-    pages: '568',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_3',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 5,
-    title: 'Al-Masad',
-    titleAr: 'المسد',
-    translatedName: 'خوب بٹی ہوئی',
-
-    index: '111',
-    pages: '568',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_5',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 4,
-    title: 'Al-Ikhlas',
-    titleAr: 'الإخلاص',
-    translatedName: 'اخلاص',
-
-    index: '112',
-    pages: '569',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_4',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 5,
-    title: 'Al-Falaq',
-    titleAr: 'الفلق',
-    translatedName: 'صبح',
-
-    index: '113',
-    pages: '569',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_5',
-        },
-      },
-    ],
-  },
-  {
-    place: 'Mecca',
-    type: 'Makkiyah',
-    count: 6,
-    title: 'An-Nas',
-    titleAr: 'الناس',
-    translatedName: 'انسان',
-
-    index: '114',
-    pages: '569',
-    juz: [
-      {
-        index: '30',
-        verse: {
-          start: 'verse_1',
-          end: 'verse_6',
-        },
-      },
-    ],
+    id: 1,
+    name: 'الفاتحة',
+    transliteration: 'Al-Fatihah',
+    translation: 'کھولنے والی',
+    type: 'Mecca',
+    total_verses: 7,
+  },
+  {
+    id: 2,
+    name: 'البقرة',
+    transliteration: 'Al-Baqarah',
+    translation: 'گائے',
+    type: 'Medina',
+    total_verses: 286,
+  },
+  {
+    id: 3,
+    name: 'آل عمران',
+    transliteration: "Ali 'Imran",
+    translation: 'عمران کا خاندان',
+    type: 'Medina',
+    total_verses: 200,
+  },
+  {
+    id: 4,
+    name: 'النساء',
+    transliteration: 'An-Nisa',
+    translation: 'عورت',
+    type: 'Medina',
+    total_verses: 176,
+  },
+  {
+    id: 5,
+    name: 'المائدة',
+    transliteration: "Al-Ma'idah",
+    translation: 'دسترخوان',
+    type: 'Medina',
+    total_verses: 120,
+  },
+  {
+    id: 6,
+    name: 'الأنعام',
+    transliteration: "Al-An'am",
+    translation: 'مویشی',
+    type: 'Mecca',
+    total_verses: 165,
+  },
+  {
+    id: 7,
+    name: 'الأعراف',
+    transliteration: "Al-A'raf",
+    translation: 'اونچی جگہ',
+    type: 'Mecca',
+    total_verses: 206,
+  },
+  {
+    id: 8,
+    name: 'الأنفال',
+    transliteration: 'Al-Anfal',
+    translation: 'مال غنیمت',
+    type: 'Medina',
+    total_verses: 75,
+  },
+  {
+    id: 9,
+    name: 'التوبة',
+    transliteration: 'At-Tawbah',
+    translation: 'توبہ',
+    type: 'Medina',
+    total_verses: 129,
+  },
+  {
+    id: 10,
+    name: 'يونس',
+    transliteration: 'Yunus',
+    translation: 'یونس',
+    type: 'Mecca',
+    total_verses: 109,
+  },
+  {
+    id: 11,
+    name: 'هود',
+    transliteration: 'Hud',
+    translation: 'حود',
+    type: 'Mecca',
+    total_verses: 123,
+  },
+  {
+    id: 12,
+    name: 'يوسف',
+    transliteration: 'Yusuf',
+    translation: 'یوسف',
+    type: 'Mecca',
+    total_verses: 111,
+  },
+  {
+    id: 13,
+    name: 'الرعد',
+    transliteration: "Ar-Ra'd",
+    translation: 'گرج',
+    type: 'Medina',
+    total_verses: 43,
+  },
+  {
+    id: 14,
+    name: 'ابراهيم',
+    transliteration: 'Ibrahim',
+    translation: 'ابراہیم',
+    type: 'Mecca',
+    total_verses: 52,
+  },
+  {
+    id: 15,
+    name: 'الحجر',
+    transliteration: 'Al-Hijr',
+    translation: 'پتھر',
+    type: 'Mecca',
+    total_verses: 99,
+  },
+  {
+    id: 16,
+    name: 'النحل',
+    transliteration: 'An-Nahl',
+    translation: 'شہد کی مکھی',
+    type: 'Mecca',
+    total_verses: 128,
+  },
+  {
+    id: 17,
+    name: 'الإسراء',
+    transliteration: 'Al-Isra',
+    translation: 'رات کا صفر',
+    type: 'Mecca',
+    total_verses: 111,
+  },
+  {
+    id: 18,
+    name: 'الكهف',
+    transliteration: 'Al-Kahf',
+    translation: 'غار',
+    type: 'Mecca',
+    total_verses: 110,
+  },
+  {
+    id: 19,
+    name: 'مريم',
+    transliteration: 'Maryam',
+    translation: 'مریم',
+    type: 'Mecca',
+    total_verses: 98,
+  },
+  {
+    id: 20,
+    name: 'طه',
+    transliteration: 'Taha',
+    translation: 'طٰہٰ',
+    type: 'Mecca',
+    total_verses: 135,
+  },
+  {
+    id: 21,
+    name: 'الأنبياء',
+    transliteration: 'Al-Anbya',
+    translation: 'پیغمبر',
+    type: 'Mecca',
+    total_verses: 112,
+  },
+  {
+    id: 22,
+    name: 'الحج',
+    transliteration: 'Al-Hajj',
+    translation: 'حج',
+    type: 'Medina',
+    total_verses: 78,
+  },
+  {
+    id: 23,
+    name: 'المؤمنون',
+    transliteration: "Al-Mu'minun",
+    translation: 'مومنین',
+    type: 'Mecca',
+    total_verses: 118,
+  },
+  {
+    id: 24,
+    name: 'النور',
+    transliteration: 'An-Nur',
+    translation: 'نور',
+    type: 'Medina',
+    total_verses: 64,
+  },
+  {
+    id: 25,
+    name: 'الفرقان',
+    transliteration: 'Al-Furqan',
+    translation: 'صحیح اور غلط میں فرق کرنے والی کتاب',
+    type: 'Mecca',
+    total_verses: 77,
+  },
+  {
+    id: 26,
+    name: 'الشعراء',
+    transliteration: "Ash-Shu'ara",
+    translation: 'شعراٗ',
+    type: 'Mecca',
+    total_verses: 227,
+  },
+  {
+    id: 27,
+    name: 'النمل',
+    transliteration: 'An-Naml',
+    translation: 'چیونٹی',
+    type: 'Mecca',
+    total_verses: 93,
+  },
+  {
+    id: 28,
+    name: 'القصص',
+    transliteration: 'Al-Qasas',
+    translation: 'قصے',
+    type: 'Mecca',
+    total_verses: 88,
+  },
+  {
+    id: 29,
+    name: 'العنكبوت',
+    transliteration: "Al-'Ankabut",
+    translation: 'مکڑی',
+    type: 'Mecca',
+    total_verses: 69,
+  },
+  {
+    id: 30,
+    name: 'الروم',
+    transliteration: 'Ar-Rum',
+    translation: 'روم',
+    type: 'Mecca',
+    total_verses: 60,
+  },
+  {
+    id: 31,
+    name: 'لقمان',
+    transliteration: 'Luqman',
+    translation: 'لقمان',
+    type: 'Mecca',
+    total_verses: 34,
+  },
+  {
+    id: 32,
+    name: 'السجدة',
+    transliteration: 'As-Sajdah',
+    translation: 'سجدہ',
+    type: 'Mecca',
+    total_verses: 30,
+  },
+  {
+    id: 33,
+    name: 'الأحزاب',
+    transliteration: 'Al-Ahzab',
+    translation: 'متحد گروہ',
+    type: 'Medina',
+    total_verses: 73,
+  },
+  {
+    id: 34,
+    name: 'سبإ',
+    transliteration: 'Saba',
+    translation: 'سبا',
+    type: 'Mecca',
+    total_verses: 54,
+  },
+  {
+    id: 35,
+    name: 'فاطر',
+    transliteration: 'Fatir',
+    translation: 'پیدا کرنے والا',
+    type: 'Mecca',
+    total_verses: 45,
+  },
+  {
+    id: 36,
+    name: 'يس',
+    transliteration: 'Ya-Sin',
+    translation: 'یٰسٓ',
+    type: 'Mecca',
+    total_verses: 83,
+  },
+  {
+    id: 37,
+    name: 'الصافات',
+    transliteration: 'As-Saffat',
+    translation: 'صف باندھنے والے',
+    type: 'Mecca',
+    total_verses: 182,
+  },
+  {
+    id: 38,
+    name: 'ص',
+    transliteration: 'Sad',
+    translation: 'صٓ',
+    type: 'Mecca',
+    total_verses: 88,
+  },
+  {
+    id: 39,
+    name: 'الزمر',
+    transliteration: 'Az-Zumar',
+    translation: 'گروہ',
+    type: 'Mecca',
+    total_verses: 75,
+  },
+  {
+    id: 40,
+    name: 'غافر',
+    transliteration: 'Ghafir',
+    translation: 'بخشنے والا',
+    type: 'Mecca',
+    total_verses: 85,
+  },
+  {
+    id: 41,
+    name: 'فصلت',
+    transliteration: 'Fussilat',
+    translation: 'مفصل',
+    type: 'Mecca',
+    total_verses: 54,
+  },
+  {
+    id: 42,
+    name: 'الشورى',
+    transliteration: 'Ash-Shuraa',
+    translation: 'شورٰی',
+    type: 'Mecca',
+    total_verses: 53,
+  },
+  {
+    id: 43,
+    name: 'الزخرف',
+    transliteration: 'Az-Zukhruf',
+    translation: 'سونے کی چمک',
+    type: 'Mecca',
+    total_verses: 89,
+  },
+  {
+    id: 44,
+    name: 'الدخان',
+    transliteration: 'Ad-Dukhan',
+    translation: 'دھواں',
+    type: 'Mecca',
+    total_verses: 59,
+  },
+  {
+    id: 45,
+    name: 'الجاثية',
+    transliteration: 'Al-Jathiyah',
+    translation: 'زانوٗوں کے بل گری ہوئی',
+    type: 'Mecca',
+    total_verses: 37,
+  },
+  {
+    id: 46,
+    name: 'الأحقاف',
+    transliteration: 'Al-Ahqaf',
+    translation: 'ریگستان',
+    type: 'Mecca',
+    total_verses: 35,
+  },
+  {
+    id: 47,
+    name: 'محمد',
+    transliteration: 'Muhammad',
+    translation: 'محمدﷺ',
+    type: 'Medina',
+    total_verses: 38,
+  },
+  {
+    id: 48,
+    name: 'الفتح',
+    transliteration: 'Al-Fath',
+    translation: 'فتح',
+    type: 'Medina',
+    total_verses: 29,
+  },
+  {
+    id: 49,
+    name: 'الحجرات',
+    transliteration: 'Al-Hujurat',
+    translation: 'حجرے',
+    type: 'Medina',
+    total_verses: 18,
+  },
+  {
+    id: 50,
+    name: 'ق',
+    transliteration: 'Qaf',
+    translation: 'قٓ',
+    type: 'Mecca',
+    total_verses: 45,
+  },
+  {
+    id: 51,
+    name: 'الذاريات',
+    transliteration: 'Adh-Dhariyat',
+    translation: 'بکھیرنے والیاں',
+    type: 'Mecca',
+    total_verses: 60,
+  },
+  {
+    id: 52,
+    name: 'الطور',
+    transliteration: 'At-Tur',
+    translation: 'طور پہاڑ',
+    type: 'Mecca',
+    total_verses: 49,
+  },
+  {
+    id: 53,
+    name: 'النجم',
+    transliteration: 'An-Najm',
+    translation: 'ستارہ',
+    type: 'Mecca',
+    total_verses: 62,
+  },
+  {
+    id: 54,
+    name: 'القمر',
+    transliteration: 'Al-Qamar',
+    translation: 'چاند',
+    type: 'Mecca',
+    total_verses: 55,
+  },
+  {
+    id: 55,
+    name: 'الرحمن',
+    transliteration: 'Ar-Rahman',
+    translation: 'مہربان',
+    type: 'Medina',
+    total_verses: 78,
+  },
+  {
+    id: 56,
+    name: 'الواقعة',
+    transliteration: "Al-Waqi'ah",
+    translation: 'واقعہ ہونے والی قیامت',
+    type: 'Mecca',
+    total_verses: 96,
+  },
+  {
+    id: 57,
+    name: 'الحديد',
+    transliteration: 'Al-Hadid',
+    translation: 'فولاد',
+    type: 'Medina',
+    total_verses: 29,
+  },
+  {
+    id: 58,
+    name: 'المجادلة',
+    transliteration: 'Al-Mujadila',
+    translation: 'جھگڑنے والی',
+    type: 'Medina',
+    total_verses: 22,
+  },
+  {
+    id: 59,
+    name: 'الحشر',
+    transliteration: 'Al-Hashr',
+    translation: 'حشر',
+    type: 'Medina',
+    total_verses: 24,
+  },
+  {
+    id: 60,
+    name: 'الممتحنة',
+    transliteration: 'Al-Mumtahanah',
+    translation: 'امتحان لی جانے والی',
+    type: 'Medina',
+    total_verses: 13,
+  },
+  {
+    id: 61,
+    name: 'الصف',
+    transliteration: 'As-Saf',
+    translation: 'صف',
+    type: 'Medina',
+    total_verses: 14,
+  },
+  {
+    id: 62,
+    name: 'الجمعة',
+    transliteration: "Al-Jumu'ah",
+    translation: 'جمعہ',
+    type: 'Medina',
+    total_verses: 11,
+  },
+  {
+    id: 63,
+    name: 'المنافقون',
+    transliteration: 'Al-Munafiqun',
+    translation: 'منافقین',
+    type: 'Medina',
+    total_verses: 11,
+  },
+  {
+    id: 64,
+    name: 'التغابن',
+    transliteration: 'At-Taghabun',
+    translation: 'ہار جیت',
+    type: 'Medina',
+    total_verses: 18,
+  },
+  {
+    id: 65,
+    name: 'الطلاق',
+    transliteration: 'At-Talaq',
+    translation: 'طلاق',
+    type: 'Medina',
+    total_verses: 12,
+  },
+  {
+    id: 66,
+    name: 'التحريم',
+    transliteration: 'At-Tahrim',
+    translation: 'حرمت',
+    type: 'Medina',
+    total_verses: 12,
+  },
+  {
+    id: 67,
+    name: 'الملك',
+    transliteration: 'Al-Mulk',
+    translation: 'ملک',
+    type: 'Mecca',
+    total_verses: 30,
+  },
+  {
+    id: 68,
+    name: 'القلم',
+    transliteration: 'Al-Qalam',
+    translation: 'قلم',
+    type: 'Mecca',
+    total_verses: 52,
+  },
+  {
+    id: 69,
+    name: 'الحاقة',
+    transliteration: 'Al-Haqqah',
+    translation: 'حق ہونے والی',
+    type: 'Mecca',
+    total_verses: 52,
+  },
+  {
+    id: 70,
+    name: 'المعارج',
+    transliteration: "Al-Ma'arij",
+    translation: 'عروج',
+    type: 'Mecca',
+    total_verses: 44,
+  },
+  {
+    id: 71,
+    name: 'نوح',
+    transliteration: 'Nuh',
+    translation: 'نوح',
+    type: 'Mecca',
+    total_verses: 28,
+  },
+  {
+    id: 72,
+    name: 'الجن',
+    transliteration: 'Al-Jinn',
+    translation: 'جن',
+    type: 'Mecca',
+    total_verses: 28,
+  },
+  {
+    id: 73,
+    name: 'المزمل',
+    transliteration: 'Al-Muzzammil',
+    translation: 'کپڑا لپیٹنے والا',
+    type: 'Mecca',
+    total_verses: 20,
+  },
+  {
+    id: 74,
+    name: 'المدثر',
+    transliteration: 'Al-Muddaththir',
+    translation: 'کپڑا اوڑھنے والا',
+    type: 'Mecca',
+    total_verses: 56,
+  },
+  {
+    id: 75,
+    name: 'القيامة',
+    transliteration: 'Al-Qiyamah',
+    translation: 'قیامۃ',
+    type: 'Mecca',
+    total_verses: 40,
+  },
+  {
+    id: 76,
+    name: 'الانسان',
+    transliteration: 'Al-Insan',
+    translation: 'انسان',
+    type: 'Medina',
+    total_verses: 31,
+  },
+  {
+    id: 77,
+    name: 'المرسلات',
+    transliteration: 'Al-Mursalat',
+    translation: 'بھیجی جانے والی ہوائیں',
+    type: 'Mecca',
+    total_verses: 50,
+  },
+  {
+    id: 78,
+    name: 'النبإ',
+    transliteration: 'An-Naba',
+    translation: 'خبر',
+    type: 'Mecca',
+    total_verses: 40,
+  },
+  {
+    id: 79,
+    name: 'النازعات',
+    transliteration: "An-Nazi'at",
+    translation: 'زور سے کھینچنے والے',
+    type: 'Mecca',
+    total_verses: 46,
+  },
+  {
+    id: 80,
+    name: 'عبس',
+    transliteration: "'Abasa",
+    translation: 'تیوری چڑہائی',
+    type: 'Mecca',
+    total_verses: 42,
+  },
+  {
+    id: 81,
+    name: 'التكوير',
+    transliteration: 'At-Takwir',
+    translation: 'لپیٹنا',
+    type: 'Mecca',
+    total_verses: 29,
+  },
+  {
+    id: 82,
+    name: 'الإنفطار',
+    transliteration: 'Al-Infitar',
+    translation: 'ٹکڑے ہونا',
+    type: 'Mecca',
+    total_verses: 19,
+  },
+  {
+    id: 83,
+    name: 'المطففين',
+    transliteration: 'Al-Mutaffifin',
+    translation: 'ناپ تول میں کمی کرنے والے',
+    type: 'Mecca',
+    total_verses: 36,
+  },
+  {
+    id: 84,
+    name: 'الإنشقاق',
+    transliteration: 'Al-Inshiqaq',
+    translation: 'پھٹنا',
+    type: 'Mecca',
+    total_verses: 25,
+  },
+  {
+    id: 85,
+    name: 'البروج',
+    transliteration: 'Al-Buruj',
+    translation: 'برج',
+    type: 'Mecca',
+    total_verses: 22,
+  },
+  {
+    id: 86,
+    name: 'الطارق',
+    transliteration: 'At-Tariq',
+    translation: 'رات کو آنے والا',
+    type: 'Mecca',
+    total_verses: 17,
+  },
+  {
+    id: 87,
+    name: 'الأعلى',
+    transliteration: "Al-A'la",
+    translation: 'اعلی',
+    type: 'Mecca',
+    total_verses: 19,
+  },
+  {
+    id: 88,
+    name: 'الغاشية',
+    transliteration: 'Al-Ghashiyah',
+    translation: 'چھا جانے والی',
+    type: 'Mecca',
+    total_verses: 26,
+  },
+  {
+    id: 89,
+    name: 'الفجر',
+    transliteration: 'Al-Fajr',
+    translation: 'فجر',
+    type: 'Mecca',
+    total_verses: 30,
+  },
+  {
+    id: 90,
+    name: 'البلد',
+    transliteration: 'Al-Balad',
+    translation: 'شہر',
+    type: 'Mecca',
+    total_verses: 20,
+  },
+  {
+    id: 91,
+    name: 'الشمس',
+    transliteration: 'Ash-Shams',
+    translation: 'آفتاب',
+    type: 'Mecca',
+    total_verses: 15,
+  },
+  {
+    id: 92,
+    name: 'الليل',
+    transliteration: 'Al-Layl',
+    translation: 'رات',
+    type: 'Mecca',
+    total_verses: 21,
+  },
+  {
+    id: 93,
+    name: 'الضحى',
+    transliteration: 'Ad-Duhaa',
+    translation: 'دن کا چڑھنا',
+    type: 'Mecca',
+    total_verses: 11,
+  },
+  {
+    id: 94,
+    name: 'الشرح',
+    transliteration: 'Ash-Sharh',
+    translation: 'تسکین',
+    type: 'Mecca',
+    total_verses: 8,
+  },
+  {
+    id: 95,
+    name: 'التين',
+    transliteration: 'At-Tin',
+    translation: 'انجیر',
+    type: 'Mecca',
+    total_verses: 8,
+  },
+  {
+    id: 96,
+    name: 'العلق',
+    transliteration: "Al-'Alaq",
+    translation: 'جما ہوا خون',
+    type: 'Mecca',
+    total_verses: 19,
+  },
+  {
+    id: 97,
+    name: 'القدر',
+    transliteration: 'Al-Qadr',
+    translation: 'شب قدر',
+    type: 'Mecca',
+    total_verses: 5,
+  },
+  {
+    id: 98,
+    name: 'البينة',
+    transliteration: 'Al-Bayyinah',
+    translation: 'ثبوت',
+    type: 'Medina',
+    total_verses: 8,
+  },
+  {
+    id: 99,
+    name: 'الزلزلة',
+    transliteration: 'Az-Zalzalah',
+    translation: 'زلزلہ',
+    type: 'Medina',
+    total_verses: 8,
+  },
+  {
+    id: 100,
+    name: 'العاديات',
+    transliteration: "Al-'Adiyat",
+    translation: 'دوڑنے والے گھوڑے',
+    type: 'Mecca',
+    total_verses: 11,
+  },
+  {
+    id: 101,
+    name: 'القارعة',
+    transliteration: "Al-Qari'ah",
+    translation: 'کھڑکھڑاہٹ',
+    type: 'Mecca',
+    total_verses: 11,
+  },
+  {
+    id: 102,
+    name: 'التكاثر',
+    transliteration: 'At-Takathur',
+    translation: 'کثرت',
+    type: 'Mecca',
+    total_verses: 8,
+  },
+  {
+    id: 103,
+    name: 'العصر',
+    transliteration: "Al-'Asr",
+    translation: 'زمانہ',
+    type: 'Mecca',
+    total_verses: 3,
+  },
+  {
+    id: 104,
+    name: 'الهمزة',
+    transliteration: 'Al-Humazah',
+    translation: 'عیب لگانے والا',
+    type: 'Mecca',
+    total_verses: 9,
+  },
+  {
+    id: 105,
+    name: 'الفيل',
+    transliteration: 'Al-Fil',
+    translation: 'ہاتھی',
+    type: 'Mecca',
+    total_verses: 5,
+  },
+  {
+    id: 106,
+    name: 'قريش',
+    transliteration: 'Quraysh',
+    translation: 'قریش',
+    type: 'Mecca',
+    total_verses: 4,
+  },
+  {
+    id: 107,
+    name: 'الماعون',
+    transliteration: "Al-Ma'un",
+    translation: 'تھوڑی سی چیز',
+    type: 'Mecca',
+    total_verses: 7,
+  },
+  {
+    id: 108,
+    name: 'الكوثر',
+    transliteration: 'Al-Kawthar',
+    translation: 'جنت کی نہر',
+    type: 'Mecca',
+    total_verses: 3,
+  },
+  {
+    id: 109,
+    name: 'الكافرون',
+    transliteration: 'Al-Kafirun',
+    translation: 'کافرین',
+    type: 'Mecca',
+    total_verses: 6,
+  },
+  {
+    id: 110,
+    name: 'النصر',
+    transliteration: 'An-Nasr',
+    translation: 'نصرت',
+    type: 'Medina',
+    total_verses: 3,
+  },
+  {
+    id: 111,
+    name: 'المسد',
+    transliteration: 'Al-Masad',
+    translation: 'خوب بٹی ہوئی',
+    type: 'Mecca',
+    total_verses: 5,
+  },
+  {
+    id: 112,
+    name: 'الإخلاص',
+    transliteration: 'Al-Ikhlas',
+    translation: 'اخلاص',
+    type: 'Mecca',
+    total_verses: 4,
+  },
+  {
+    id: 113,
+    name: 'الفلق',
+    transliteration: 'Al-Falaq',
+    translation: 'صبح',
+    type: 'Mecca',
+    total_verses: 5,
+  },
+  {
+    id: 114,
+    name: 'الناس',
+    transliteration: 'An-Nas',
+    translation: 'انسان',
+    type: 'Mecca',
+    total_verses: 6,
   },
 ];
