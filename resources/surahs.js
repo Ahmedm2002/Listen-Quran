@@ -21,6 +21,7 @@ export const surahs = [
   {
     place: 'Medina',
     type: 'Madaniyah',
+
     count: 286,
     title: 'Al-Baqara',
     titleAr: 'البقرة',

@@ -1,10 +1,41 @@
-// SurahDetails.tsx
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
+import Sound from 'react-native-sound';
 import MeccaImg from '../../assets/icons/mecca.png';
 import MadinaImg from '../../assets/icons/medina.png';
 
 const SurahDetails = ({surah}: {surah: any}) => {
+  const soundRef = useRef<Sound | null>(null);
+
+  useEffect(() => {
+    // Enable playback in silence mode (iOS)
+    Sound.setCategory('Playback');
+
+    // Load sound from bundle
+    const sound = new Sound('audio1.mp3', Sound.MAIN_BUNDLE, error => {
+      if (error) {
+        console.log('failed to load sound', error);
+        return;
+      }
+      console.log('sound loaded, duration:', sound.getDuration());
+      sound.play(success => {
+        if (success) {
+          console.log('successfully finished playing');
+        } else {
+          console.log('playback failed');
+        }
+      });
+    });
+
+    soundRef.current = sound;
+
+    return () => {
+      if (soundRef.current) {
+        soundRef.current.release();
+      }
+    };
+  }, []);
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{surah.title}</Text>

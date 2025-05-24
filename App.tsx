@@ -1,30 +1,32 @@
 import React from 'react';
-import Home from './src/Pages/Home/Home';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import surahPage from './src/Pages/surahPage';
+import Home from './src/Pages/Home';
+import SurahPage from './src/Pages/surahPage';
 
 const Stack = createNativeStackNavigator();
 
 function App(): React.JSX.Element {
   return (
-    <>
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen
-            name="Home"
-            component={Home}
-            options={{headerShown: false}}
-          />
-          <Stack.Screen
-            name="surahPage"
-            component={surahPage}
-            options={{headerShown: false}}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </>
+    <SafeAreaProvider>
+      <SafeAreaView style={{flex: 1}} edges={['top', 'bottom']}>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen
+              name="Home"
+              component={Home}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="SurahPage"
+              component={SurahPage}
+              options={{headerShown: false}}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
-
 export default App;

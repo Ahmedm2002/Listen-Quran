@@ -7,8 +7,8 @@ import {
   Animated,
   Dimensions,
 } from 'react-native';
-import SurahList from '../../Components/SurahList';
-import Favourites from '../Favourites';
+import SurahList from '../Components/SurahList';
+import Favourites from './Favourites';
 const Home = () => {
   const [activeTab, setActiveTab] = useState<'surahs' | 'favourites'>('surahs');
   const underlineAnim = useRef(new Animated.Value(0)).current;

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   FlatList,
   Text,
@@ -10,10 +10,32 @@ import {
 import {useNavigation} from '@react-navigation/native';
 import {surahs} from '../../resources/surahs';
 import Search from './Search';
+import {Audio} from 'expo-av';
 
 const SurahList = () => {
   const navigation = useNavigation();
   const [searchTerm, setSearchTerm] = useState('');
+  const [sound, setSound] = useState();
+
+  async function playSound() {
+    console.log('Lodaing track');
+    const {sound} = await Audio.Sound.createAsync(
+      require('../audioFiles/1.mp3'),
+    );
+    setSound(sound);
+
+    console.log('Playing Sound');
+    await sound.playAsync();
+  }
+
+  useEffect(() => {
+    return sound
+      ? () => {
+          console.log('Unloading Sound');
+          sound.unloadAsync();
+        }
+      : undefined;
+  }, [sound]);
 
   const filteredSurahs = surahs.filter(
     item =>
@@ -30,7 +52,7 @@ const SurahList = () => {
         contentContainerStyle={styles.content}
         renderItem={({item}) => (
           <TouchableOpacity
-            onPress={() => navigation.navigate('surahPage', {item})}>
+            onPress={() => navigation.navigate('SurahPage', {item})}>
             <View style={styles.surahCard}>
               <View style={styles.surahNumberContainer}>
                 <Text style={styles.surahNumber}>
@@ -85,18 +107,6 @@ const styles = StyleSheet.create({
     transform: [{rotate: '-45deg'}],
   },
 
-  // surahNumberContainer: {
-  //   width: 45,
-  //   height: 45,
-  //   borderRadius: 22.5,
-  //   backgroundColor: '#d3eedd',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  // },
-  // surahNumber: {
-  //   fontWeight: 'bold',
-  //   color: '#2c3e50',
-  // },
   surahInfo: {
     flex: 1,
     marginHorizontal: 12,
@@ -130,19 +140,3 @@ const styles = StyleSheet.create({
 });
 
 export default SurahList;
-
-// For round surah container
-// surahNumberContainer: {
-//   width: 45,
-//   height: 45,
-//   borderRadius: 22.5,
-//   backgroundColor: '#d3eedd',
-//   justifyContent: 'center',
-//   alignItems: 'center',
-// },
-// surahNumber: {
-//   fontWeight: 'bold',
-//   color: '#2c3e50',
-// },
-
-//  Ubaid ur Rehman
