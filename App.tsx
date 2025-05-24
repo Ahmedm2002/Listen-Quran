@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/Pages/Home';
 import SurahPage from './src/Pages/surahPage';
+import JuzzPage from './src/Pages/JuzzPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,11 @@ function App(): React.JSX.Element {
             <Stack.Screen
               name="SurahPage"
               component={SurahPage}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="juzzPage"
+              component={JuzzPage}
               options={{headerShown: false}}
             />
           </Stack.Navigator>

@@ -9,22 +9,31 @@ import {
 } from 'react-native';
 import SurahList from '../Components/SurahList';
 import Favourites from './Favourites';
+import JuzzPage from './JuzzPage';
+
 const Home = () => {
-  const [activeTab, setActiveTab] = useState<'surahs' | 'favourites'>('surahs');
+  const [activeTab, setActiveTab] = useState<'surahs' | 'favourites' | 'juzs'>(
+    'surahs',
+  );
+
   const underlineAnim = useRef(new Animated.Value(0)).current;
   const screenWidth = Dimensions.get('window').width;
-  const tabWidth = screenWidth / 2;
+  const tabWidth = screenWidth / 3;
 
   useEffect(() => {
+    let toValue = 0;
+    if (activeTab === 'juzs') toValue = tabWidth;
+    else if (activeTab === 'favourites') toValue = tabWidth * 2;
+
     Animated.timing(underlineAnim, {
-      toValue: activeTab === 'surahs' ? 0 : tabWidth,
+      toValue,
       duration: 300,
       useNativeDriver: false,
     }).start();
   }, [activeTab]);
 
   return (
-    <>
+    <View style={{flex: 1}}>
       <View style={styles.header}>
         <Text style={styles.heading}>Listen Quran</Text>
       </View>
@@ -41,6 +50,19 @@ const Home = () => {
             Surahs
           </Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => setActiveTab('juzs')}
+          style={styles.tabButton}>
+          <Text
+            style={[
+              styles.tabText,
+              activeTab === 'juzs' && styles.activeTabText,
+            ]}>
+            Juzz
+          </Text>
+        </TouchableOpacity>
+
         <TouchableOpacity
           onPress={() => setActiveTab('favourites')}
           style={styles.tabButton}>
@@ -52,13 +74,19 @@ const Home = () => {
             Favourites
           </Text>
         </TouchableOpacity>
+
         <Animated.View
           style={[styles.underline, {left: underlineAnim, width: tabWidth}]}
         />
       </View>
 
-      {activeTab === 'surahs' ? <SurahList /> : <Favourites />}
-    </>
+      {/* Tab Content */}
+      <View style={styles.tabContent}>
+        {activeTab === 'surahs' && <SurahList />}
+        {activeTab === 'juzs' && <JuzzPage />}
+        {activeTab === 'favourites' && <Favourites />}
+      </View>
+    </View>
   );
 };
 
@@ -99,6 +127,12 @@ const styles = StyleSheet.create({
     height: 3,
     backgroundColor: '#2c6e49',
     borderRadius: 2,
+  },
+  tabContent: {
+    flex: 1,
+    backgroundColor: '#f5f5f5',
+    paddingHorizontal: 5,
+    paddingVertical: 7,
   },
 });
 
