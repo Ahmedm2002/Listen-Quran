@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 import {
   FlatList,
   Text,
-  TouchableOpacity,
+  Pressable,
   View,
   StyleSheet,
   useWindowDimensions,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {surahs} from '../../resources/surahs';
+import {surahs} from '../../resources/Surahs/surahs';
 import Search from './Search';
 
 const SurahList = () => {
@@ -30,7 +30,8 @@ const SurahList = () => {
         keyExtractor={(item, index) => item.id + '-' + index}
         contentContainerStyle={styles.content}
         renderItem={({item}) => (
-          <TouchableOpacity
+          <Pressable
+            android_ripple={{color: 'transparent'}}
             onPress={() => navigation.navigate('SurahPage', {item})}>
             <View style={styles.surahCard}>
               <View style={styles.surahNumberContainer}>
@@ -53,7 +54,7 @@ const SurahList = () => {
                 </View>
               </View>
             </View>
-          </TouchableOpacity>
+          </Pressable>
         )}
       />
     </>

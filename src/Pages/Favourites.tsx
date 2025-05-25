@@ -5,6 +5,7 @@ const Favourites = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Your favourite Surahs will appear here.</Text>
+      <Text style={styles.text}>Module under developemnt.</Text>
     </View>
   );
 };
