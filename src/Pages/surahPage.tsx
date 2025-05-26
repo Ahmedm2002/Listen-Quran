@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import SurahDetails from '../Components/SurahDetails';
+import SurahDetails from '../Components/Surah/SurahDetails';
 
 const SurahPage = ({route}: any) => {
   const surah = route?.params?.item;

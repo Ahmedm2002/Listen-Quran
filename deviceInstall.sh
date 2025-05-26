@@ -1,16 +1,15 @@
-echo "Navigating to android folder"
+#!/bin/bash
 
-cd android/ 
+echo "📂 Navigating to Android folder..."
+cd android/
 
-echo "Creating apk release"
- ./gradlew assembleRelease 
+echo "🏗️ Building APK release..."
+./gradlew assembleRelease
 
-echo "Navigating to release folder"
-
+echo "📁 Navigating to release folder..."
 cd ./app/build/outputs/apk/release/
 
-echo "Installing the app in the connected device"
-
+echo "📱 Installing the app on the connected device..."
 adb install app-release.apk
 
-echo "Tasks Fininshed"
+echo "✅ All tasks finished successfully!"

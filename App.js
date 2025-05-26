@@ -6,7 +6,6 @@ import Home from './src/Pages/Home';
 import SurahPage from './src/Pages/surahPage';
 import JuzzPage from './src/Pages/JuzzPage';
 import {setUpPlayer} from './MusicService/service';
-import {ActivityIndicator} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
@@ -45,7 +44,7 @@ function App() {
               options={{headerShown: false}}
             />
             <Stack.Screen
-              name="juzzPage"
+              name="JuzzPage"
               component={JuzzPage}
               options={{headerShown: false}}
             />

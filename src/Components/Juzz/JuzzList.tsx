@@ -1,38 +1,24 @@
-import React, {useState} from 'react';
-import {
-  FlatList,
-  Text,
-  Pressable,
-  View,
-  StyleSheet,
-  useWindowDimensions,
-} from 'react-native';
+import React from 'react';
+import {FlatList, Text, Pressable, View, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {surahs} from '../../resources/Surahs/surahs';
-import Search from './Search';
+import {juzData} from '../../../resources/Juzz/juzz';
 
-const SurahList = () => {
+const JuzzList = () => {
   const navigation = useNavigation();
-  const [searchTerm, setSearchTerm] = useState('');
-  const {fontScale} = useWindowDimensions();
-
-  const filteredSurahs = surahs.filter(
-    item =>
-      item.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.name.includes(searchTerm),
-  );
 
   return (
     <>
-      <Search onSearch={setSearchTerm} />
       <FlatList
-        data={filteredSurahs}
+        data={juzData}
         keyExtractor={(item, index) => item.id + '-' + index}
         contentContainerStyle={styles.content}
         renderItem={({item}) => (
           <Pressable
             android_ripple={{color: 'transparent'}}
-            onPress={() => navigation.navigate('SurahPage', {item})}>
+            onPress={() => {
+              console.log('Navigating ot page with: ', item);
+              navigation.navigate('JuzzPage', {item});
+            }}>
             <View style={styles.surahCard}>
               <View style={styles.surahNumberContainer}>
                 <Text style={styles.surahNumber}>{item.id}</Text>
@@ -40,16 +26,12 @@ const SurahList = () => {
               <View style={styles.surahInfo}>
                 <View style={styles.rowBetween}>
                   <View style={styles.leftText}>
-                    <Text style={styles.surahTitle}>
-                      {item.transliteration}
-                    </Text>
-                    <Text style={styles.surahMeaning}>{item.translation}</Text>
+                    <Text style={styles.surahTitle}>{item.title}</Text>
+                    <Text style={styles.surahMeaning}>{item.english}</Text>
                   </View>
                   <View style={styles.rightText}>
-                    <Text style={styles.surahArabic}>{item.name}</Text>
-                    <Text style={styles.surahAyahCount}>
-                      {item.total_verses} Ayahs
-                    </Text>
+                    <Text style={styles.surahArabic}>{item.arabic}</Text>
+                    <Text style={styles.surahAyahCount}>{item.range}</Text>
                   </View>
                 </View>
               </View>
@@ -132,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SurahList;
+export default JuzzList;

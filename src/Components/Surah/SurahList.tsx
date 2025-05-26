@@ -8,7 +8,7 @@ import {
   useWindowDimensions,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {surahs} from '../../resources/Surahs/surahs';
+import {surahs} from '../../../resources/Surahs/surahs';
 import Search from './Search';
 
 const SurahList = () => {

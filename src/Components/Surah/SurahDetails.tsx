@@ -7,8 +7,8 @@ import {
   ScrollView,
   SafeAreaView,
 } from 'react-native';
-import ControlCenter from './Player/ControlCenter';
-import {surahAudioMap} from '../Constants/surahAudioMap';
+import ControlCenter from '../Player/ControlCenter';
+import {surahAudioMap} from '../../Constants/surahAudioMap';
 
 const SurahDetails = ({surah}: {surah: any}) => {
   return (
@@ -24,8 +24,8 @@ const SurahDetails = ({surah}: {surah: any}) => {
               <Image
                 source={
                   surah.type === 'Mecca'
-                    ? require('../../assets/icons/mecca.png')
-                    : require('../../assets/icons/medina.png')
+                    ? require('../../../assets/icons/mecca.png')
+                    : require('../../../assets/icons/medina.png')
                 }
                 style={styles.placeImage}
                 resizeMode="contain"

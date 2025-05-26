@@ -9,8 +9,8 @@ import {
 } from 'react-native';
 
 import Favourites from './Favourites';
-import JuzzPage from './JuzzPage';
-import SurahList from '../Components/SurahList';
+import SurahList from '../Components/Surah/SurahList';
+import JuzzList from '../Components/Juzz/JuzzList';
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('surahs');
@@ -81,7 +81,7 @@ const Home = () => {
 
       <View style={styles.tabContent}>
         {activeTab === 'surahs' && <SurahList />}
-        {activeTab === 'juzs' && <JuzzPage />}
+        {activeTab === 'juzs' && <JuzzList />}
         {activeTab === 'favourites' && <Favourites />}
       </View>
     </View>

@@ -1,15 +1,22 @@
-import React, {Component} from 'react';
-import {Text, StyleSheet, View} from 'react-native';
-import {juzData} from '../../resources/Juzz/juzz';
+import React from 'react';
+import {View, StyleSheet} from 'react-native';
+import JuzzDetails from '../Components/Juzz/JuzzDetails';
 
-export default class JuzzPage extends Component {
-  render() {
-    return (
-      <View>
-        <Text> This is Juzz Component </Text>
-      </View>
-    );
-  }
-}
+const JuzzPage = ({route}: any) => {
+  const juzz = route?.params?.item;
 
-const styles = StyleSheet.create({});
+  return (
+    <View style={styles.container}>
+      <JuzzDetails juzz={juzz} />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f9fdf9',
+  },
+});
+
+export default JuzzPage;
