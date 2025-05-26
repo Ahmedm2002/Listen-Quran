@@ -14,7 +14,6 @@ const SurahPage = ({route}: any) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 24,
     flex: 1,
     backgroundColor: '#f9fdf9',
   },
@@ -22,7 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f9fdf9',
+    backgroundColor: 'red',
   },
   error: {
     color: 'red',

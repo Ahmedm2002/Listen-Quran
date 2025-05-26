@@ -7,16 +7,15 @@ import {
   Animated,
   Dimensions,
 } from 'react-native';
-import SurahList from '../Components/SurahList';
+
 import Favourites from './Favourites';
 import JuzzPage from './JuzzPage';
+import SurahList from '../Components/SurahList';
 
 const Home = () => {
-  const [activeTab, setActiveTab] = useState<'surahs' | 'favourites' | 'juzs'>(
-    'surahs',
-  );
-
+  const [activeTab, setActiveTab] = useState('surahs');
   const underlineAnim = useRef(new Animated.Value(0)).current;
+
   const screenWidth = Dimensions.get('window').width;
   const tabWidth = screenWidth / 3;
 
@@ -27,13 +26,13 @@ const Home = () => {
 
     Animated.timing(underlineAnim, {
       toValue,
-      duration: 300,
+      duration: 200,
       useNativeDriver: false,
     }).start();
   }, [activeTab]);
 
   return (
-    <View style={{flex: 1}}>
+    <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.heading}>Listen Quran</Text>
       </View>
@@ -80,7 +79,6 @@ const Home = () => {
         />
       </View>
 
-      {/* Tab Content */}
       <View style={styles.tabContent}>
         {activeTab === 'surahs' && <SurahList />}
         {activeTab === 'juzs' && <JuzzPage />}
@@ -91,6 +89,10 @@ const Home = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   header: {
     paddingTop: 15,
     paddingHorizontal: 16,
