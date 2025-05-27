@@ -13,7 +13,6 @@ const Favourites = () => {
 const styles = StyleSheet.create({
   container: {
     padding: 16,
-    backgroundColor: '#fdfdfd',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',

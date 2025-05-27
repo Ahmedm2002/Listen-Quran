@@ -16,45 +16,50 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import Slider from '@react-native-community/slider';
 import {useFocusEffect} from '@react-navigation/native';
 import usePlaybackStatus from '../../Hooks/UsePlayBack';
+import DurationContainer from './DurationContainer';
 
 const {width} = Dimensions.get('window');
 
-const ControlCenter = ({surah}: {surah: any}) => {
+const ControlCenter = ({audioToPlay}: {audioToPlay: any}) => {
   const playbackState = usePlaybackStatus();
   const {position, duration} = useProgress();
   const [isReady, setIsReady] = useState(false);
 
+  const SliderComp: any = Slider;
+
+  const setup = async () => {
+    try {
+      await TrackPlayer.reset();
+      await TrackPlayer.add({
+        id: `${audioToPlay.id}`,
+        url: audioToPlay.url,
+        title: audioToPlay.name,
+        artist: 'Qari',
+      });
+
+      await TrackPlayer.setRepeatMode(RepeatMode.Track);
+      await TrackPlayer.play();
+      setIsReady(true);
+    } catch (error) {
+      console.error('Error initializing track:', error);
+    }
+  };
+
   useFocusEffect(
     React.useCallback(() => {
-      const setup = async () => {
-        try {
-          await TrackPlayer.reset();
-          await TrackPlayer.add({
-            id: `${surah.id}`,
-            url: surah.url,
-            title: surah.name,
-            artist: 'Qari',
-          });
-          await TrackPlayer.setRepeatMode(RepeatMode.Track);
-          await TrackPlayer.play();
-          setIsReady(true);
-        } catch (error) {
-          console.error('Error initializing track:', error);
-        }
-      };
-
       setup();
 
       return () => {
         TrackPlayer.stop();
         TrackPlayer.reset();
       };
-    }, [surah.id]),
+    }, [audioToPlay.id]),
   );
 
   const togglePlayback = async () => {
     try {
       const {state} = await TrackPlayer.getPlaybackState();
+
       if (
         state === State.Ready ||
         state === State.Paused ||
@@ -69,23 +74,14 @@ const ControlCenter = ({surah}: {surah: any}) => {
     }
   };
 
-  const formatTime = (sec: number) => {
-    if (!sec || isNaN(sec)) return '00:00';
-    const minutes = Math.floor(sec / 60);
-    const seconds = Math.floor(sec % 60);
-    return `${minutes < 10 ? '0' + minutes : minutes}:${
-      seconds < 10 ? '0' + seconds : seconds
-    }`;
-  };
-
   return (
     <View style={styles.wrapper}>
       <View style={styles.container}>
         {isReady ? (
           <>
-            <Text style={styles.title}>{surah.name}</Text>
+            <Text style={styles.title}>{audioToPlay?.name}</Text>
 
-            <Slider
+            <SliderComp
               style={styles.slider}
               minimumValue={0}
               maximumValue={duration}
@@ -93,7 +89,7 @@ const ControlCenter = ({surah}: {surah: any}) => {
               minimumTrackTintColor="#22c55e"
               maximumTrackTintColor="#555"
               thumbTintColor="#22c55e"
-              onSlidingComplete={async value => {
+              onSlidingComplete={async (value: number) => {
                 try {
                   await TrackPlayer.seekTo(value);
                 } catch (err) {
@@ -102,10 +98,7 @@ const ControlCenter = ({surah}: {surah: any}) => {
               }}
             />
 
-            <View style={styles.timeContainer}>
-              <Text style={styles.timeText}>{formatTime(position)}</Text>
-              <Text style={styles.timeText}>{formatTime(duration)}</Text>
-            </View>
+            <DurationContainer position={position} duration={duration} />
 
             <Pressable style={styles.button} onPress={togglePlayback}>
               {playbackState === State.Loading ||
@@ -161,18 +154,6 @@ const styles = StyleSheet.create({
   slider: {
     width: '100%',
     height: 40,
-  },
-  timeContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
-    marginTop: 8,
-    marginBottom: 16,
-  },
-  timeText: {
-    color: '#dddddd',
-    fontSize: 16,
-    fontWeight: '600',
   },
   button: {
     backgroundColor: '#22c55e',

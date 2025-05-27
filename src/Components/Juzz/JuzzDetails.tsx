@@ -1,5 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet, ScrollView} from 'react-native';
+import ControlCenter from '../Player/ControlCenter';
+import {juzzAudioMap} from '../../Constants/juzzAudioMap';
 
 const JuzzDetails = ({juzz}) => {
   if (!juzz) {
@@ -11,16 +13,25 @@ const JuzzDetails = ({juzz}) => {
   }
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.card}>
-        <Text style={styles.title}>{juzz.title}</Text>
-        <Text style={styles.arabic}>{juzz.arabic}</Text>
-        <Text style={styles.english}>{juzz.english}</Text>
-        <View style={styles.rangeBox}>
-          <Text style={styles.rangeText}>Verses: {juzz.range}</Text>
+    <>
+      <ScrollView contentContainerStyle={styles.container}>
+        <View style={styles.card}>
+          <Text style={styles.title}>{juzz.title}</Text>
+          <Text style={styles.arabic}>{juzz.arabic}</Text>
+          <Text style={styles.english}>{juzz.english}</Text>
+          <View style={styles.rangeBox}>
+            <Text style={styles.rangeText}>Verses: {juzz.range}</Text>
+          </View>
         </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
+      <ControlCenter
+        audioToPlay={{
+          ...juzz,
+          url: juzzAudioMap[juzz.id],
+          name: juzz.arabic,
+        }}
+      />
+    </>
   );
 };
 

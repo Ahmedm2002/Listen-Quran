@@ -39,7 +39,7 @@ const SurahDetails = ({surah}: {surah: any}) => {
       </ScrollView>
 
       <ControlCenter
-        surah={{
+        audioToPlay={{
           ...surah,
           url: surahAudioMap[surah.id],
         }}
