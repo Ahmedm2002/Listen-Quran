@@ -1,4 +1,6 @@
-export const juzData = [
+import iJuzz from '../../src/Models/juzz.model';
+
+export const juzData: iJuzz[] = [
   {
     id: 1,
     title: 'Juz 1',

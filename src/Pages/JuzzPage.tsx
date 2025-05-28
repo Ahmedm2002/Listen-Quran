@@ -1,9 +1,10 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import JuzzDetails from '../Components/Juzz/JuzzDetails';
+import iJuzz from '../Models/juzz.model';
 
 const JuzzPage = ({route}: any) => {
-  const juzz = route?.params?.item;
+  const juzz: iJuzz = route?.params?.item;
 
   return (
     <View style={styles.container}>

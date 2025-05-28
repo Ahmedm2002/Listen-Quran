@@ -2,6 +2,7 @@ import React from 'react';
 import {FlatList, Text, Pressable, View, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {juzData} from '../../../resources/Juzz/juzz';
+import iJuzz from '../../Models/juzz.model';
 
 const JuzzList = () => {
   const navigation = useNavigation();
@@ -16,7 +17,6 @@ const JuzzList = () => {
           <Pressable
             android_ripple={{color: 'transparent'}}
             onPress={() => {
-              console.log('Navigating ot page with: ', item);
               navigation.navigate('JuzzPage', {item});
             }}>
             <View style={styles.surahCard}>

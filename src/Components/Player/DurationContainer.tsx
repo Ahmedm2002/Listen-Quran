@@ -12,12 +12,10 @@ const formatTime = (sec: number) => {
 
 function DurationContainer({position, duration}) {
   return (
-    <>
-      <View style={styles.timeContainer}>
-        <Text style={styles.timeText}>{formatTime(position)}</Text>
-        <Text style={styles.timeText}>{formatTime(duration)}</Text>
-      </View>
-    </>
+    <View style={styles.timeContainer}>
+      <Text style={styles.timeText}>{formatTime(position)}</Text>
+      <Text style={styles.timeText}>{formatTime(duration)}</Text>
+    </View>
   );
 }
 
@@ -26,12 +24,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    marginTop: 8,
-    marginBottom: 16,
+    paddingHorizontal: 4,
+    marginBottom: 12,
   },
   timeText: {
-    color: '#dddddd',
-    fontSize: 16,
+    color: '#cccccc',
+    fontSize: 13,
     fontWeight: '600',
   },
 });

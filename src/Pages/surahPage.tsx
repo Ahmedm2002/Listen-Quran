@@ -1,9 +1,10 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import SurahDetails from '../Components/Surah/SurahDetails';
+import iSurah from '../Models/surah.model';
 
 const SurahPage = ({route}: any) => {
-  const surah = route?.params?.item;
+  const surah: iSurah = route?.params?.item;
 
   return (
     <View style={styles.container}>

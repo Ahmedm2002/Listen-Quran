@@ -1,4 +1,6 @@
-export const surahs = [
+import iSurah from '../../src/Models/surah.model';
+
+export const surahs: iSurah[] = [
   {
     id: 1,
     name: 'الفاتحة',

@@ -2,8 +2,9 @@ import React from 'react';
 import {Text, View, StyleSheet, ScrollView} from 'react-native';
 import ControlCenter from '../Player/ControlCenter';
 import {juzzAudioMap} from '../../Constants/juzzAudioMap';
+import iJuzz from '../../Models/juzz.model';
 
-const JuzzDetails = ({juzz}) => {
+const JuzzDetails = ({juzz}: {juzz: iJuzz}) => {
   if (!juzz) {
     return (
       <View style={styles.center}>

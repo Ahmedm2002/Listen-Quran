@@ -9,8 +9,9 @@ import {
 } from 'react-native';
 import ControlCenter from '../Player/ControlCenter';
 import {surahAudioMap} from '../../Constants/surahAudioMap';
+import iSurah from '../../Models/surah.model';
 
-const SurahDetails = ({surah}: {surah: any}) => {
+const SurahDetails = ({surah}: {surah: iSurah}) => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
@@ -51,7 +52,6 @@ const SurahDetails = ({surah}: {surah: any}) => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    // backgroundColor: 'red',
     backgroundColor: '#f1f8e9',
   },
   scrollContent: {

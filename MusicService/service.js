@@ -30,4 +30,9 @@ export async function playBackService() {
   TrackPlayer.addEventListener(Event.RemotePrevious, () => {
     TrackPlayer.skipToPrevious();
   });
+
+  TrackPlayer.addEventListener(Event.PlaybackQueueEnded, () => {
+    TrackPlayer.seekTo(0);
+    TrackPlayer.pause();
+  });
 }

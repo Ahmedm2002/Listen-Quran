@@ -1,12 +1,5 @@
 import React, {useState} from 'react';
-import {
-  FlatList,
-  Text,
-  Pressable,
-  View,
-  StyleSheet,
-  useWindowDimensions,
-} from 'react-native';
+import {FlatList, Text, Pressable, View, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {surahs} from '../../../resources/Surahs/surahs';
 import Search from './Search';
