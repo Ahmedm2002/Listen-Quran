@@ -29,6 +29,11 @@ const ControlCenter = ({audioToPlay}: {audioToPlay: AudioFile}) => {
   const playbackState = usePlaybackStatus();
   const {position, duration} = useProgress();
   const [isReady, setIsReady] = useState(false);
+  const [isFavorite, setIsFavourite] = useState<boolean>(false);
+
+  function toggleFavorite() {
+    setIsFavourite(prev => !prev);
+  }
 
   const SliderComp: any = Slider;
 
@@ -105,20 +110,52 @@ const ControlCenter = ({audioToPlay}: {audioToPlay: AudioFile}) => {
 
             <DurationContainer position={position} duration={duration} />
 
-            <Pressable style={styles.button} onPress={togglePlayback}>
-              {playbackState === State.Loading ||
-              playbackState === State.Buffering ? (
-                <ActivityIndicator size="small" color="#fff" />
-              ) : (
+            <View style={styles.controlsRow}>
+              <Icon
+                name="queue-music"
+                size={30}
+                color="#666"
+                style={styles.icon}
+              />
+
+              <Icon
+                name="skip-previous"
+                size={40}
+                color="#666"
+                style={styles.icon}
+              />
+
+              <Pressable style={styles.playButton} onPress={togglePlayback}>
+                {playbackState === State.Loading ||
+                playbackState === State.Buffering ? (
+                  <ActivityIndicator size={30} color="#fff" />
+                ) : (
+                  <Icon
+                    name={
+                      playbackState === State.Playing ? 'pause' : 'play-arrow'
+                    }
+                    size={40}
+                    color="#fff"
+                  />
+                )}
+              </Pressable>
+
+              <Icon
+                name="skip-next"
+                size={40}
+                color="#666"
+                style={styles.icon}
+              />
+
+              <Pressable onPress={toggleFavorite}>
                 <Icon
-                  name={
-                    playbackState === State.Playing ? 'pause' : 'play-arrow'
-                  }
+                  name="favorite"
                   size={30}
-                  color="#fff"
+                  color={isFavorite ? 'red' : '#fff'}
+                  style={styles.icon}
                 />
-              )}
-            </Pressable>
+              </Pressable>
+            </View>
           </>
         ) : (
           <ActivityIndicator size="large" color="#16a34a" />
@@ -167,11 +204,43 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#16a34a',
     borderRadius: 100,
-    paddingVertical: 14,
-    paddingHorizontal: 30,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 10,
+    shadowColor: '#16a34a',
+    shadowOffset: {width: 0, height: 4},
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    elevation: 6,
+  },
+  disabledButton: {
+    opacity: 0.5,
+    padding: 10,
+  },
+  heartWrapper: {
+    marginTop: 12,
+    padding: 6,
+  },
+  controlsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    padding: 5,
+    width: '100%',
+  },
+
+  icon: {
+    paddingHorizontal: 10,
+  },
+
+  playButton: {
+    backgroundColor: '#16a34a',
+    borderRadius: 50,
+    padding: 18,
+    alignItems: 'center',
+    justifyContent: 'center',
     shadowColor: '#16a34a',
     shadowOffset: {width: 0, height: 4},
     shadowOpacity: 0.3,

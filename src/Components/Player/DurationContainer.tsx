@@ -32,11 +32,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '100%',
     paddingHorizontal: 4,
-    marginBottom: 12,
+    marginBottom: 6,
   },
   timeText: {
     color: '#cccccc',
-    fontSize: 13,
+    fontSize: 15,
     fontWeight: '600',
   },
 });
