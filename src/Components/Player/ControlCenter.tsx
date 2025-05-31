@@ -10,7 +10,6 @@ import {
 import TrackPlayer, {
   useProgress,
   State,
-  Event,
   RepeatMode,
 } from 'react-native-track-player';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -66,7 +65,7 @@ const ControlCenter = ({audioToPlay}: {audioToPlay: AudioFile}) => {
         TrackPlayer.stop();
         TrackPlayer.reset();
       };
-    }, [audioToPlay.id]),
+    }, [audioToPlay?.id]),
   );
 
   const togglePlayback = async () => {
