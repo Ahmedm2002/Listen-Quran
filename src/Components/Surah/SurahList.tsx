@@ -1,8 +1,23 @@
 import React, {useState} from 'react';
-import {FlatList, Text, Pressable, View, StyleSheet} from 'react-native';
+import {
+  FlatList,
+  Text,
+  Pressable,
+  View,
+  StyleSheet,
+  Dimensions,
+  PixelRatio,
+} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {surahs} from '../../../resources/Surahs/surahs';
 import Search from './Search';
+
+const {width: SCREEN_WIDTH} = Dimensions.get('window');
+const scaleFont = size => {
+  const scale = SCREEN_WIDTH / 375; // 375 is a reference width (iPhone 6/7/8)
+  const newSize = size * scale;
+  return Math.round(PixelRatio.roundToNearestPixel(newSize));
+};
 
 const SurahList = () => {
   const navigation = useNavigation();
@@ -37,13 +52,9 @@ const SurahList = () => {
                     <Text style={styles.surahTitle}>
                       {item.transliteration}
                     </Text>
-                    <Text style={styles.surahMeaning}>{item.translation}</Text>
                   </View>
-                  <View style={styles.rightText}>
+                  <View style={styles.centeredText}>
                     <Text style={styles.surahArabic}>{item.name}</Text>
-                    <Text style={styles.surahAyahCount}>
-                      {item.total_verses} Ayahs
-                    </Text>
                   </View>
                 </View>
               </View>
@@ -75,8 +86,8 @@ const styles = StyleSheet.create({
     shadowRadius: 6,
   },
   surahNumberContainer: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     backgroundColor: '#AFE1AF',
     justifyContent: 'center',
     alignItems: 'center',
@@ -87,7 +98,7 @@ const styles = StyleSheet.create({
     color: '#1A1A1A',
     fontWeight: 'bold',
     transform: [{rotate: '-45deg'}],
-    fontSize: 18,
+    fontSize: scaleFont(13),
   },
   surahInfo: {
     flex: 1,
@@ -96,33 +107,31 @@ const styles = StyleSheet.create({
   rowBetween: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    alignItems: 'center', // changed from flex-start to center
   },
   leftText: {
     flex: 1,
+  },
+  centeredText: {
+    flex: 1,
+    alignItems: 'center',
   },
   rightText: {
     alignItems: 'flex-end',
   },
   surahTitle: {
-    fontSize: 20,
+    fontSize: scaleFont(16),
     fontWeight: 'bold',
     color: '#2c3e50',
   },
-  surahMeaning: {
-    fontSize: 16,
-    color: '#555',
-    marginTop: 4,
-    textAlign: 'left',
-  },
   surahArabic: {
-    fontSize: 24,
+    fontSize: scaleFont(20),
     color: '#1A1A1A',
     fontWeight: '700',
   },
   surahAyahCount: {
     marginTop: 4,
-    fontSize: 15,
+    fontSize: scaleFont(15),
     color: '#2c3e50',
   },
 });

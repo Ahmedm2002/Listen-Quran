@@ -29,6 +29,7 @@ const ControlCenter = ({audioToPlay}: {audioToPlay: AudioFile}) => {
   const {position, duration} = useProgress();
   const [isReady, setIsReady] = useState(false);
   const [isFavorite, setIsFavourite] = useState<boolean>(false);
+  const [speed, setSpeed] = useState(1.0);
 
   function toggleFavorite() {
     setIsFavourite(prev => !prev);
@@ -81,6 +82,20 @@ const ControlCenter = ({audioToPlay}: {audioToPlay: AudioFile}) => {
     }
   };
 
+  const handleSpeedPress = async () => {
+    const speeds = [1.0, 1.25, 1.5, 1.75, 2.0];
+    const currentIndex = speeds.indexOf(speed);
+    const nextIndex = (currentIndex + 1) % speeds.length;
+    const newSpeed = speeds[nextIndex];
+
+    try {
+      await TrackPlayer.setRate(newSpeed);
+      setSpeed(newSpeed);
+    } catch (error) {
+      console.error('Speed change error:', error);
+    }
+  };
+
   return (
     <View style={styles.wrapper}>
       <View style={styles.container}>
@@ -110,12 +125,9 @@ const ControlCenter = ({audioToPlay}: {audioToPlay: AudioFile}) => {
             <DurationContainer position={position} duration={duration} />
 
             <View style={styles.controlsRow}>
-              <Icon
-                name="queue-music"
-                size={30}
-                color="#666"
-                style={styles.icon}
-              />
+              <Pressable style={styles.speedButton} onPress={handleSpeedPress}>
+                <Text style={styles.speedText}>{speed}x</Text>
+              </Pressable>
 
               <Icon
                 name="skip-previous"
@@ -155,6 +167,8 @@ const ControlCenter = ({audioToPlay}: {audioToPlay: AudioFile}) => {
                 />
               </Pressable>
             </View>
+
+            {/* Speed Control */}
           </>
         ) : (
           <ActivityIndicator size="large" color="#16a34a" />
@@ -200,28 +214,6 @@ const styles = StyleSheet.create({
     height: 40,
     marginBottom: 6,
   },
-  button: {
-    backgroundColor: '#16a34a',
-    borderRadius: 100,
-    paddingVertical: 20,
-    paddingHorizontal: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 10,
-    shadowColor: '#16a34a',
-    shadowOffset: {width: 0, height: 4},
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-    elevation: 6,
-  },
-  disabledButton: {
-    opacity: 0.5,
-    padding: 10,
-  },
-  heartWrapper: {
-    marginTop: 12,
-    padding: 6,
-  },
   controlsRow: {
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -229,11 +221,9 @@ const styles = StyleSheet.create({
     padding: 5,
     width: '100%',
   },
-
   icon: {
     paddingHorizontal: 10,
   },
-
   playButton: {
     backgroundColor: '#16a34a',
     borderRadius: 50,
@@ -245,5 +235,16 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 6,
     elevation: 6,
+  },
+  speedButton: {
+    backgroundColor: '#16a34a',
+    borderRadius: 20,
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+  },
+  speedText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });

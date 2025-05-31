@@ -5,12 +5,7 @@ export async function setUpPlayer() {
     return true;
   } catch (error) {
     try {
-      await TrackPlayer.setupPlayer({
-        android: {
-          appKilledPlaybackBehaviour:
-            AppKilledPlaybackBehavior.StopPlaybackAndRemoveNotification,
-        },
-      });
+      await TrackPlayer.setupPlayer();
       return true;
     } catch (setupError) {
       console.error('Setup error:', setupEror);
